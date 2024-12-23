@@ -1,14 +1,13 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export function Logo() {
   return (
     <Link
-      className="inline-grid grid-cols-[auto,_1fr] grid-rows-2 items-center text-sm font-bold uppercase tracking-tight"
+      // className="inline-grid grid-cols-[auto,_1fr] grid-rows-2 items-center text-sm font-bold uppercase tracking-tight"
       href="/"
     >
-      <span className="row-span-2 text-5xl font-extrabold">11</span>
-      <span>MINUTE</span>
-      <span>SCHOOL</span>
+      <Image src="/icons/icon-logo.svg" alt="logo" height={25} width={100} />
     </Link>
   );
 }

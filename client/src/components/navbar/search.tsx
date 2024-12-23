@@ -1,6 +1,7 @@
 "use client";
 
 import { CircleXIcon, SearchIcon } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import { Fragment, useRef, useState } from "react";
 
@@ -21,12 +22,12 @@ export function Search() {
   const searchInputRef = useRef<HTMLInputElement | null>(null);
 
   return (
-    <div>
-      <form className="relative w-[40rem]">
+    <div className="flex-1">
+      <form className="relative hidden md:block">
         <div className="relative">
           <Input
             className={cn(
-              "h-11 px-10 !text-base focus-visible:ring-0",
+              "h-11 px-12 !text-base focus-visible:ring-0",
               isSearchOpen ? "rounded-b-none rounded-t-3xl" : "rounded-full",
             )}
             type="text"
@@ -36,10 +37,16 @@ export function Search() {
             value={searchText}
             ref={searchInputRef}
           />
-          <SearchIcon className="absolute left-0 top-1/2 ms-3 size-5 -translate-y-1/2 text-muted-foreground" />
+          <Image
+            className="absolute left-0 top-1/2 ms-4 size-7 -translate-y-1/2 text-muted-foreground"
+            src="/icons/icon-search.svg"
+            alt="search icon"
+            height={50}
+            width={50}
+          />
           {!!searchText && (
             <CircleXIcon
-              className="absolute right-0 top-1/2 me-3 size-5 -translate-y-1/2 cursor-pointer text-muted-foreground"
+              className="absolute right-0 top-1/2 me-4 size-5 -translate-y-1/2 cursor-pointer text-muted-foreground"
               onClick={() => {
                 setSearchText("");
                 searchInputRef.current?.focus();
