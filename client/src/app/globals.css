@@ -76,7 +76,7 @@ body {
 
 @layer utilities {
   .grid-container {
-    --padding-inline: 1rem;
+    --padding-inline: 0.5rem;
     --container-max-width: 75rem;
 
     display: grid;
@@ -91,5 +91,14 @@ body {
 
   .grid-container>.full-width {
     grid-column: full-width;
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
   }
 }

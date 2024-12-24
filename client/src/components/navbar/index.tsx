@@ -22,7 +22,7 @@ export function Navbar() {
         >
           <Image
             className="size-5 md:size-4"
-            src="/icons/image (1).svg"
+            src="/icons/icon-phone.svg"
             alt="phone icon"
             height={25}
             width={25}
