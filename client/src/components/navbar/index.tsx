@@ -2,20 +2,23 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { Logo } from "@/components/logo";
+import { ThemeToggle } from "@/components/theme-toggle";
 import { buttonVariants } from "@/components/ui/button";
 import { LanguageSwitch } from "./language-switch";
-import { Navmenu } from "./navmenu";
+import { MobileNavMenu } from "./mobile-nav-menu";
+import { NavMenu } from "./nav-menu";
 import { Search } from "./search";
 
 export function Navbar() {
   return (
-    <header className="grid-container border-b">
+    <header className="grid-container fixed right-0 z-[999] w-full border-b bg-background">
       <div className="flex h-16 items-center gap-x-4 md:gap-x-6">
-        <Navmenu />
-        {/* MobileNavmenu */}
+        <MobileNavMenu />
         <Logo />
         <Search />
+        <NavMenu />
         <LanguageSwitch />
+        <ThemeToggle />
         <a
           className="flex items-center gap-x-0.5 font-medium text-accent"
           href="tel:16910"
