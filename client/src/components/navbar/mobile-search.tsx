@@ -4,6 +4,8 @@ import { CircleXIcon, SearchIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { Fragment, useRef, useState } from "react";
+import { Button } from "@/components/ui/button";
+import { ArrowLeftIcon } from "lucide-react";
 
 import { Input } from "@/components/ui/input";
 import { cn } from "@/lib/utils";
@@ -16,33 +18,44 @@ const famousSearches = [
   "admission",
 ] as const;
 
-export function Search() {
+export function MobileSearch() {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [searchText, setSearchText] = useState("");
   const searchInputRef = useRef<HTMLInputElement | null>(null);
 
   return (
-    <div className="mx-2 hidden flex-1 md:block">
-      <form className="relative">
+    <div className="flex flex-1 justify-end md:hidden">
+      <Button
+        variant="outline"
+        size="icon"
+        onClick={() => setIsSearchOpen(true)}
+      >
+        <Image
+          className="size-6"
+          src="/icons/icon-search.svg"
+          alt="search icon"
+          height={50}
+          width={50}
+        />
+      </Button>
+      <form
+        className={cn(
+          "fixed right-0 top-0 hidden w-full bg-background",
+          isSearchOpen && "block",
+        )}
+      >
         <div className="relative">
           <Input
-            className={cn(
-              "h-11 px-12 !text-base focus-visible:ring-0",
-              isSearchOpen ? "rounded-b-none rounded-t-3xl" : "rounded-full",
-            )}
+            className="h-12 px-12 !text-base focus-visible:ring-0"
             type="text"
-            placeholder="স্কিলস কোর্স, কিংবা স্কুল প্রোগ্রাম সার্চ করুন..."
-            onClick={() => setIsSearchOpen((prev) => !prev)}
+            placeholder="Search skills, course or scool programs..."
             onChange={(event) => setSearchText(event.target.value)}
             value={searchText}
             ref={searchInputRef}
           />
-          <Image
-            className="absolute left-0 top-1/2 ms-4 size-7 -translate-y-1/2 text-muted-foreground"
-            src="/icons/icon-search.svg"
-            alt="search icon"
-            height={50}
-            width={50}
+          <ArrowLeftIcon
+            className="absolute left-0 top-1/2 ms-4 size-4 -translate-y-1/2 text-muted-foreground"
+            onClick={() => setIsSearchOpen(false)}
           />
           {!!searchText && (
             <CircleXIcon
@@ -54,12 +67,7 @@ export function Search() {
             />
           )}
         </div>
-        <div
-          className={cn(
-            "absolute z-[99] w-full rounded-b-3xl border border-t-0 border-input bg-background py-4 text-sm shadow-sm transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring",
-            isSearchOpen ? "block" : "hidden",
-          )}
-        >
+        <div className="w-full bg-background py-4 text-sm transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring">
           {!searchText ? (
             <Fragment>
               <h2 className="font-mediub px-5 pb-2">Famous Searches</h2>
@@ -85,13 +93,6 @@ export function Search() {
           )}
         </div>
       </form>
-      <div
-        className={cn(
-          "fixed inset-0 top-16 hidden bg-foreground/50",
-          isSearchOpen && "block",
-        )}
-        onClick={() => setIsSearchOpen(false)}
-      />
     </div>
   );
 }

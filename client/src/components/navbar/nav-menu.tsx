@@ -12,7 +12,7 @@ import { navLinks, type TNavLink } from "./mobile-nav-menu";
 
 export function NavMenu() {
   return (
-    <nav className="hidden items-center gap-2 lg:gap-4 xl:flex">
+    <nav className="mx-2 hidden items-center gap-2 lg:gap-4 xl:flex">
       {navLinks.slice(0, 5).map(({ label, links }: TNavLink) =>
         !!links?.length ? (
           <div key={label}>

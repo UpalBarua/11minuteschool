@@ -1,6 +1,6 @@
 export function App() {
   return (
-    <section className="section container visible py-[72px] md:py-28">
+    <section className="py-[72px] md:py-28">
       <div className="relative flex flex-col items-center overflow-hidden rounded-[20px] bg-black px-5 pt-8 md:flex-row md:pt-0">
         <svg
           xmlns="http://www.w3.org/2000/svg"

@@ -96,7 +96,7 @@ export function Skills() {
           </ul>
         </div>
       </div>
-      <div className="container mb-14">
+      <div className="mb-14">
         <div className="tenms-carousel right dark relative">
           <div className="w-full overflow-hidden">
             <div className="mx-lg:hidden absolute right-0 top-1/2 z-[3] block -translate-y-1/2 cursor-pointer">

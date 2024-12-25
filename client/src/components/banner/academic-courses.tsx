@@ -7,14 +7,6 @@ const academicCourses = [
     icon: "https://cdn.10minuteschool.com/images/image_6344663_1733036653015.png?w=65&h=65",
   },
   {
-    label: "ক্লাস ৬,৭,৮",
-    icon: "https://cdn.10minuteschool.com/images/image_6344663_1733036653015.png?w=65&h=65",
-  },
-  {
-    label: "ক্লাস ৬,৭,৮",
-    icon: "https://cdn.10minuteschool.com/images/image_6344663_1733036653015.png?w=65&h=65",
-  },
-  {
     label: "ক্লাস ৯, ১০ ",
     icon: "https://cdn.10minuteschool.com/images/9-10_1732778140427.png?w=65&h=65",
   },
@@ -41,7 +33,7 @@ export function AcademicCourses() {
         {academicCourses.map(({ icon, label }, i) => (
           <li
             key={i + icon}
-            className="flex size-full min-w-[7.5rem] cursor-pointer flex-col items-center justify-center rounded-2xl bg-background/10 px-2 py-5 text-background backdrop-blur-md transition-all duration-300"
+            className="flex size-full min-w-28 cursor-pointer flex-col items-center justify-center rounded-2xl bg-background/10 px-2 py-5 text-background backdrop-blur-md transition-all duration-300"
           >
             <Image
               className="max-w-[40px] md:max-w-[65px]"

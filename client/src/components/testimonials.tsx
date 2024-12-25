@@ -1,3 +1,11 @@
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+
 const testimonials = [
   {
     testimonial:
@@ -44,56 +52,18 @@ export function Testimonials() {
           </h2>
         </div>
       </div>
-      <div className="container mb-20">
+      <div className="mb-20">
         <div className="text-center">
           <h2 className="mb-5 text-center text-lg font-semibold md:mb-8 md:text-[28px] md:font-semibold md:leading-[44px]" />
         </div>
-        <div className="tenms-carousel light both relative">
-          <div className="w-full overflow-hidden">
-            <div className="mx-lg:hidden absolute right-0 top-1/2 z-[3] block -translate-y-1/2 cursor-pointer">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width={33}
-                height={32}
-                fill="none"
-                viewBox="0 0 33 32"
-                className="xl:mr-[-40px]"
-              >
-                <path
-                  fill="#000"
-                  fillOpacity="0.5"
-                  fillRule="evenodd"
-                  d="M16.757 32c8.836 0 16-7.163 16-16s-7.164-16-16-16c-8.837 0-16 7.163-16 16s7.163 16 16 16zM15.064 8.893a1 1 0 00-1.415 1.415L19.342 16l-5.693 5.692a1 1 0 001.415 1.415l6.4-6.4a1 1 0 000-1.414l-6.4-6.4z"
-                  clipRule="evenodd"
-                />
-              </svg>
-            </div>
-            <div className="mx-lg:hidden absolute left-0 top-1/2 z-[2] block -translate-y-1/2 cursor-pointer">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width={33}
-                height={32}
-                fill="none"
-                viewBox="0 0 33 32"
-                className="rotate-180 xl:ml-[-40px]"
-              >
-                <path
-                  fill="#000"
-                  fillOpacity="0.5"
-                  fillRule="evenodd"
-                  d="M16.757 32c8.836 0 16-7.163 16-16s-7.164-16-16-16c-8.837 0-16 7.163-16 16s7.163 16 16 16zM15.064 8.893a1 1 0 00-1.415 1.415L19.342 16l-5.693 5.692a1 1 0 001.415 1.415l6.4-6.4a1 1 0 000-1.414l-6.4-6.4z"
-                  clipRule="evenodd"
-                />
-              </svg>
-            </div>
-          </div>
-          <div className="no-scrollbar relative flex snap-x snap-mandatory flex-nowrap gap-4 overflow-x-scroll scroll-smooth">
+        <Carousel className="mb-4 w-full max-w-full md:mb-6">
+          <CarouselContent>
             {testimonials.map(({ name, testimonial, profession }) => (
-              <div className="mr-4" key={name}>
-                <div
-                  className="relative mt-5 flex min-h-[250px] w-[260px] flex-col justify-between rounded-lg border bg-[#FFF] p-6 align-top md:min-h-[270px] md:w-[372px]"
-                  style={{ width: 372 }}
-                >
+              <CarouselItem
+                className="py-2 sm:basis-1/2 md:basis-1/3 lg:basis-1/4"
+                key={name}
+              >
+                <div className="relative mt-5 flex min-h-[250px] flex-col justify-between rounded-lg border bg-[#FFF] p-6 align-top md:min-h-[270px]">
                   <div>
                     <div
                       className="absolute -top-4 left-5 z-[2] flex h-[38px] w-[38px] flex-row items-center justify-center rounded-full bg-[#FCE0D6] p-2"
@@ -143,10 +113,12 @@ export function Testimonials() {
                     </div>
                   </div>
                 </div>
-              </div>
+              </CarouselItem>
             ))}
-          </div>
-        </div>
+          </CarouselContent>
+          <CarouselPrevious className="size-8 translate-x-[2rem] border-0 bg-foreground/60 transition-colors hover:bg-foreground/70" />
+          <CarouselNext className="hover:bg-white/bg-foreground/70 size-8 -translate-x-[2rem] border-0 bg-foreground/60 transition-colors" />
+        </Carousel>
       </div>
     </section>
   );

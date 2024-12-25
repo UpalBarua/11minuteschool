@@ -49,7 +49,10 @@ export function SkillCourses() {
       <Carousel className="mb-4 w-full max-w-full md:mb-6">
         <CarouselContent>
           {skillCourses.map(({ src }) => (
-            <CarouselItem className="basis-1/4 py-2 md:basis-1/5" key={src}>
+            <CarouselItem
+              className="basis-1/3 py-2 sm:basis-1/4 md:basis-1/5"
+              key={src}
+            >
               <Link
                 className="w-24 flex-shrink-0 snap-start"
                 href="/"
@@ -66,8 +69,8 @@ export function SkillCourses() {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious className="size-7 translate-x-full border-0 bg-white/20 transition-colors hover:bg-white/30" />
-        <CarouselNext className="size-7 -translate-x-full border-0 bg-white/20 transition-colors hover:bg-white/30" />
+        <CarouselPrevious className="size-7 translate-x-[2rem] border-0 bg-white/20 transition-colors hover:bg-white/30" />
+        <CarouselNext className="size-7 -translate-x-[2rem] border-0 bg-white/20 transition-colors hover:bg-white/30" />
       </Carousel>
       <LearnMore label="৩০+ ফ্রি কোর্সে এনরোল হতে ক্লিক করুন" href="/" />
     </div>

@@ -1,3 +1,10 @@
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 import { ArrowRightIcon, ChevronRightIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -90,50 +97,24 @@ export function AdmissionTest() {
           পথ এখানেই।
         </p>
       </div>
-      <div className="tenms-carousel light right relative">
-        <div className="w-full overflow-hidden">
-          <div className="mx-lg:hidden blocc absolute right-0 top-1/2 z-[3] -translate-y-1/2 cursor-pointer">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width={33}
-              height={32}
-              fill="none"
-              viewBox="0 0 33 32"
-              className="xl:mr-[-40px]"
-            >
-              <path
-                fill="#000"
-                fillOpacity="0.5"
-                fillRule="evenodd"
-                d="M16.757 32c8.836 0 16-7.163 16-16s-7.164-16-16-16c-8.837 0-16 7.163-16 16s7.163 16 16 16zM15.064 8.893a1 1 0 00-1.415 1.415L19.342 16l-5.693 5.692a1 1 0 001.415 1.415l6.4-6.4a1 1 0 000-1.414l-6.4-6.4z"
-                clipRule="evenodd"
-              />
-            </svg>
-          </div>
-          <div className="mx-lg:hidden pointer-events-none absolute left-0 top-1/2 z-[2] block -translate-y-1/2 cursor-pointer opacity-10">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width={33}
-              height={32}
-              fill="none"
-              viewBox="0 0 33 32"
-              className="rotate-180 xl:ml-[-40px]"
-            >
-              <path
-                fill="#000"
-                fillOpacity="0.5"
-                fillRule="evenodd"
-                d="M16.757 32c8.836 0 16-7.163 16-16s-7.164-16-16-16c-8.837 0-16 7.163-16 16s7.163 16 16 16zM15.064 8.893a1 1 0 00-1.415 1.415L19.342 16l-5.693 5.692a1 1 0 001.415 1.415l6.4-6.4a1 1 0 000-1.414l-6.4-6.4z"
-                clipRule="evenodd"
-              />
-            </svg>
-          </div>
-        </div>
-        <div className="no-scrollbar relative flex snap-x snap-mandatory flex-nowrap gap-4 overflow-x-scroll scroll-smooth">
+      <Carousel className="mb-4 w-full max-w-full md:mb-6">
+        <CarouselContent>
           {courses.map(({ title, imgUrl, instructor, href }) => (
-            <Link href={href} key={title}>
-              <div className="h-full w-64 overflow-hidden rounded-lg border border-[#E5E7EB] bg-white transition-colors hover:border-green-600 md:min-w-[272px] md:max-w-[272px] md:rounded-[10px]">
-                <Image src={imgUrl} alt={title} width={351} height={198} />
+            <CarouselItem
+              className="py-2 sm:basis-1/2 md:basis-1/3 lg:basis-1/4"
+              key={title}
+            >
+              <Link
+                href={href}
+                className="block h-full overflow-clip rounded-lg border border-[#E5E7EB] bg-white transition-colors hover:border-green-600"
+              >
+                <Image
+                  className="w-full"
+                  src={imgUrl}
+                  alt={title}
+                  width={351}
+                  height={198}
+                />
                 <div className="flex min-h-[118px] min-w-0 flex-1 flex-col justify-between p-[14px] md:min-h-[145px]">
                   <h3 className="mb-1 line-clamp-2 h-14 text-sm font-semibold md:text-lg">
                     মেডিকেল ফাইনাল এক্সাম ব্যাচ ২০২৪
@@ -146,11 +127,13 @@ export function AdmissionTest() {
                     <ArrowRightIcon className="size-4" />
                   </span>
                 </div>
-              </div>
-            </Link>
+              </Link>
+            </CarouselItem>
           ))}
-        </div>
-      </div>
+        </CarouselContent>
+        <CarouselPrevious className="size-8 translate-x-[2rem] border-0 bg-foreground/60 transition-colors hover:bg-foreground/70" />
+        <CarouselNext className="hover:bg-white/bg-foreground/70 size-8 -translate-x-[2rem] border-0 bg-foreground/60 transition-colors" />
+      </Carousel>
       <Link
         className={buttonVariants({
           size: "lg",

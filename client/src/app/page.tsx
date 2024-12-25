@@ -11,7 +11,7 @@ import { App } from "@/components/app";
 
 export default function HomePage() {
   return (
-    <main className="grid-container">
+    <main className="grid-container pt-16">
       <Banner />
       <Offerings />
       <SscAndHsc />

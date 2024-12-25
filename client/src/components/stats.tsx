@@ -25,7 +25,7 @@ export function Stats() {
         backgroundRepeat: "no-repeat",
       }}
     >
-      <div className="container text-center">
+      <div className="text-center">
         <h2 className="text-[21px] font-bold leading-[30px] text-white md:text-[44px] md:font-semibold md:leading-[56px]">
           ২০২২-২৪ শিক্ষাবর্ষে টেন মিনিট স্কুলের এডমিশন সাফল্য
         </h2>
@@ -33,7 +33,7 @@ export function Stats() {
           তোমাদের সাফল্যই আমাদের অনুপ্রেরণা
         </p>
       </div>
-      <div className="container grid grid-cols-2 gap-4 py-7 md:grid-cols-3 md:gap-12">
+      <div className="grid grid-cols-2 gap-4 px-4 py-7 md:grid-cols-3 md:gap-12">
         {stats.map(({ label, number }) => (
           <div
             className="border-1 col-span-1 flex flex-col items-center justify-center rounded-xl border-white border-opacity-0 bg-[#00000042] p-4 py-2 text-white md:py-8"

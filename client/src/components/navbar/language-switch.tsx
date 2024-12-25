@@ -18,8 +18,7 @@ export function LanguageSwitch() {
 
   return (
     <Button
-      className="hidden gap-x-1 px-2 text-base md:flex"
-      size="sm"
+      className="hidden !px-2.5 md:flex"
       variant="outline"
       onClick={switchLang}
     >
