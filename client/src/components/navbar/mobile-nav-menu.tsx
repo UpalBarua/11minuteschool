@@ -18,7 +18,9 @@ import {
 } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
 
-const navLinks = [
+export const fuck = [{ href: "fuck" }];
+
+export const navLinks = [
   {
     label: "ক্লাস ৬-১২",
     links: [
@@ -302,7 +304,7 @@ const navLinks = [
   { label: "অ্যাফিলিয়েট হিসাবে যোগ দিন" },
 ];
 
-type TNavLink = {
+export type TNavLink = {
   label: string;
   href?: string;
   icon?: React.ReactNode;
@@ -316,6 +318,7 @@ export function MobileNavMenu() {
     <Sheet open={isMenuOpen} onOpenChange={setIsMenuOpen}>
       <SheetTrigger asChild>
         <Button
+          className="xl:hidden"
           size="icon"
           variant="ghost"
           onClick={() => setIsMenuOpen((prev) => !prev)}

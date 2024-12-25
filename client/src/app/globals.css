@@ -77,7 +77,7 @@ body {
 @layer utilities {
   .grid-container {
     --padding-inline: 0.5rem;
-    --container-max-width: 75rem;
+    --container-max-width: 80rem;
 
     display: grid;
     grid-template-columns:

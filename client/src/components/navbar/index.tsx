@@ -11,7 +11,7 @@ import { Search } from "./search";
 
 export function Navbar() {
   return (
-    <header className="grid-container fixed right-0 z-[999] w-full border-b bg-background">
+    <header className="grid-container fixed right-0 z-[99] w-full border-b bg-background">
       <div className="flex h-16 items-center gap-x-4 md:gap-x-6">
         <MobileNavMenu />
         <Logo />
