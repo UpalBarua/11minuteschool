@@ -123,7 +123,6 @@ export const getUserByEmail = async (
     }
 
     const foundUser = await findUserByEmail(email!);
-    const { password, __v, ...sanitizedUser } = foundUser!;
 
     if (!foundUser) {
       res.status(401).json({
@@ -133,6 +132,8 @@ export const getUserByEmail = async (
       });
       return;
     }
+
+    const { password, __v, ...sanitizedUser } = foundUser!;
 
     res.status(200).json({
       success: true,
