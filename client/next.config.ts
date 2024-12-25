@@ -10,6 +10,9 @@ const nextConfig: NextConfig = {
       {
         hostname: "cdn.10ms.com",
       },
+      {
+        hostname: "s3.ap-southeast-1.amazonaws.com",
+      },
     ],
   },
 };
