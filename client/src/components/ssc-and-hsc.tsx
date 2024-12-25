@@ -75,7 +75,7 @@ const icon = (
 
 export function SscAndHsc() {
   return (
-    <div className="full-width grid-container justify-items-center bg-[#F4F7FD] py-8 md:py-32">
+    <section className="full-width grid-container justify-items-center bg-[#F4F7FD] py-8 md:py-32">
       <div className="mx-w-[80ch] mx-auto mb-10 px-4 text-center">
         <h2 className="flex items-center justify-center gap-2 pb-3 text-sm font-medium text-[#183CAF] md:pb-6 md:text-lg">
           {icon}
@@ -106,6 +106,6 @@ export function SscAndHsc() {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 }
