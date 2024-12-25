@@ -1,6 +1,6 @@
-"use client"
+"use client";
 
-import { Button } from "@/components/ui/button"
+import { Button } from "@/components/ui/button";
 import {
   Form,
   FormControl,
@@ -8,30 +8,39 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from "@/components/ui/form"
-import { Input } from "@/components/ui/input"
-import { zodResolver } from "@hookform/resolvers/zod"
-import { useTransition } from "react"
-import { useForm } from "react-hook-form"
-import { z } from "zod"
+} from "@/components/ui/form";
+import { Input } from "@/components/ui/input";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { Loader2 } from "lucide-react";
+import { signIn } from "next-auth/react";
+import { useRouter } from "next/navigation";
+import { useTransition } from "react";
+import { useForm } from "react-hook-form";
+import { z } from "zod";
 
-const registerFormSchema = z.object({
-  password: z
-    .string()
-    .min(6, { message: "Password must be at least 6 characters long" }),
-  password2: z
-    .string()
-    .min(6, { message: "Password must be at least 6 characters long" }),
-})
+const registerFormSchema = z
+  .object({
+    password: z
+      .string()
+      .min(6, { message: "Password must be at least 6 characters long" }),
+    password2: z
+      .string()
+      .min(6, { message: "Password must be at least 6 characters long" }),
+  })
+  .refine(({ password, password2 }) => password === password2, {
+    message: "Passwords don't match",
+    path: ["password2"],
+  });
 
-type TRegisterFormSchema = z.infer<typeof registerFormSchema>
+type TRegisterFormSchema = z.infer<typeof registerFormSchema>;
 
 type RegisterFormProps = {
-  email: string
-}
+  email: string;
+};
 
 export function RegisterForm({ email }: RegisterFormProps) {
-  const [isLoading, startTransition] = useTransition()
+  const router = useRouter();
+  const [isLoading, startTransition] = useTransition();
 
   const form = useForm<TRegisterFormSchema>({
     resolver: zodResolver(registerFormSchema),
@@ -39,12 +48,12 @@ export function RegisterForm({ email }: RegisterFormProps) {
       password: "",
       password2: "",
     },
-  })
+  });
 
   function onSubmit({ password }: TRegisterFormSchema) {
     startTransition(async () => {
       try {
-        const res = await fetch("http://localhost:8080/api/users/register", {
+        await fetch("http://localhost:8080/api/users/register", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -53,12 +62,19 @@ export function RegisterForm({ email }: RegisterFormProps) {
             email,
             password,
           }),
-        }).then((res) => res.json())
-        console.log(res)
+        }).then((res) => res.json());
+
+        await signIn("credentials", {
+          email,
+          password,
+          redirect: false,
+        });
+
+        router.push("/");
       } catch (error) {
-        console.log(error)
+        console.log(error);
       }
-    })
+    });
   }
 
   return (
@@ -71,7 +87,12 @@ export function RegisterForm({ email }: RegisterFormProps) {
             <FormItem>
               <FormLabel>Password</FormLabel>
               <FormControl>
-                <Input className="h-12" placeholder="******" {...field} />
+                <Input
+                  className="h-12"
+                  placeholder="******"
+                  type="password"
+                  {...field}
+                />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -82,18 +103,23 @@ export function RegisterForm({ email }: RegisterFormProps) {
           name="password2"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Password</FormLabel>
+              <FormLabel>Confirm Password</FormLabel>
               <FormControl>
-                <Input className="h-12" placeholder="******" {...field} />
+                <Input
+                  className="h-12"
+                  placeholder="******"
+                  type="password"
+                  {...field}
+                />
               </FormControl>
               <FormMessage />
             </FormItem>
           )}
         />
         <Button className="w-full" size="lg" type="submit" disabled={isLoading}>
-          Register
+          {isLoading ? <Loader2 className="animate-spin" /> : "Register"}
         </Button>
       </form>
     </Form>
-  )
+  );
 }

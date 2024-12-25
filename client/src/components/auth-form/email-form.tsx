@@ -1,6 +1,11 @@
-"use client"
+"use client";
 
-import { Button } from "@/components/ui/button"
+import { useTransition } from "react";
+import { useForm } from "react-hook-form";
+import { z } from "zod";
+import { Loader2 } from "lucide-react";
+
+import { Button } from "@/components/ui/button";
 import {
   Form,
   FormControl,
@@ -8,53 +13,55 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from "@/components/ui/form"
-import { Input } from "@/components/ui/input"
-import { zodResolver } from "@hookform/resolvers/zod"
-import { useTransition } from "react"
-import { useForm } from "react-hook-form"
-import { z } from "zod"
+} from "@/components/ui/form";
+import { Input } from "@/components/ui/input";
+import { zodResolver } from "@hookform/resolvers/zod";
 
 const emailFormSchema = z.object({
   email: z.string().email({ message: "Please provide a valid email address." }),
-})
+});
 
-type TEmailFormSchema = z.infer<typeof emailFormSchema>
+type TEmailFormSchema = z.infer<typeof emailFormSchema>;
 
 type EmailFormProps = {
   setIsEmailRegisteredAction: React.Dispatch<
     React.SetStateAction<boolean | null>
-  >
-  setVerifiedEmailAction: React.Dispatch<React.SetStateAction<string>>
-}
+  >;
+  setVerifiedEmailAction: React.Dispatch<React.SetStateAction<string>>;
+};
 
 export function EmailForm({
   setIsEmailRegisteredAction,
   setVerifiedEmailAction,
-}: EmailFormProps) {
-  const [isLoading, startTransition] = useTransition()
+}: Readonly<EmailFormProps>) {
+  const [isLoading, startTransition] = useTransition();
 
   const form = useForm<TEmailFormSchema>({
     resolver: zodResolver(emailFormSchema),
     defaultValues: {
       email: "",
     },
-  })
+  });
 
   function onSubmit({ email }: TEmailFormSchema) {
     startTransition(async () => {
       try {
-        const res = await fetch(
+        const response = await fetch(
           `http://localhost:8080/api/users/${email}`,
-        ).then((res) => res.json())
-        setIsEmailRegisteredAction(res.success)
-        setVerifiedEmailAction(email)
-        console.log(res)
-      } catch (error) {
-        setIsEmailRegisteredAction(false)
-        console.log(error)
+        ).then((res) => res.json());
+
+        setVerifiedEmailAction(email);
+
+        if (response.success) {
+          setIsEmailRegisteredAction(true);
+          return;
+        }
+
+        setIsEmailRegisteredAction(false);
+      } catch {
+        setIsEmailRegisteredAction(false);
       }
-    })
+    });
   }
 
   return (
@@ -78,9 +85,9 @@ export function EmailForm({
           )}
         />
         <Button className="w-full" size="lg" type="submit" disabled={isLoading}>
-          Continue
+          {isLoading ? <Loader2 className="animate-spin" /> : "Continue"}
         </Button>
       </form>
     </Form>
-  )
+  );
 }
