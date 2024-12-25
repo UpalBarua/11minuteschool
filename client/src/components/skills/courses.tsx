@@ -80,7 +80,7 @@ export function Courses() {
               <h3 className="max-h-[50px] overflow-hidden truncate text-xs text-[#6B7280] md:text-sm">
                 {instructor}
               </h3>
-              <span className="mt-4 flex items-center gap-x-1 text-green-500 underline-offset-2 hover:underline">
+              <span className="mt-4 flex items-center gap-x-1 text-xs font-semibold text-green-500 underline-offset-2 hover:underline md:text-sm md:font-medium">
                 বিস্তারিত
                 <ArrowRightIcon className="size-4" />
               </span>
