@@ -1,75 +1,57 @@
+import Link from "next/link";
+import Image from "next/image";
+
 export function Footer() {
   return (
     <footer className="grid-container mb-24 md:mb-0">
       <div className="flex flex-col pt-12 md:flex-row md:border-[#E4E4E4]">
         <div className="mx-lg:mb-7 mx-lg:mr-6 mb-7 flex w-full flex-col items-center md:mb-0 md:items-start">
-          <a className="mb-4" href="/">
+          <Link className="mb-4" href="/">
             <div
               className="rounded-md opacity-0 transition-opacity duration-300 ease-in-out"
               style={{ fontSize: 0, objectFit: "contain", opacity: 1 }}
             >
-              <img
+              <Image
                 alt="Instructor"
-                data-original-src="/images/logo.svg"
-                draggable="false"
-                loading="lazy"
                 width={116}
                 height={32}
-                decoding="async"
-                data-nimg={1}
-                className=""
-                style={{ color: "transparent" }}
                 src="https://10minuteschool.com/images/logo.svg?w=116&h=32"
               />
             </div>
-          </a>
+          </Link>
           <h3 className="mb-[14px] text-base font-semibold md:font-medium">
             ডাউনলোড করুন আমাদের মোবাইল অ্যাপ
           </h3>
           <div className="flex">
             <div className="mr-4">
-              <a href="https://play.google.com/store/apps/details?id=com.a10minuteschool.tenminuteschool">
+              <Link href="https://play.google.com/store/apps/details?id=com.a10minuteschool.tenminuteschool">
                 <div
                   className="rounded-md opacity-0 transition-opacity duration-300 ease-in-out"
                   style={{ fontSize: 0, opacity: 1 }}
                 >
-                  <img
+                  <Image
                     alt="google play"
-                    data-original-src="https://cdn.10minuteschool.com/images/google-play-icon_1695731678094.png"
-                    draggable="false"
-                    loading="lazy"
                     width={156}
                     height={49}
-                    decoding="async"
-                    data-nimg={1}
-                    className=""
-                    style={{ color: "transparent" }}
                     src="https://cdn.10minuteschool.com/images/google-play-icon_1695731678094.png?w=156&h=49"
                   />
                 </div>
-              </a>
+              </Link>
             </div>
             <div>
-              <a href="https://apps.apple.com/us/app/10-minute-school/id1577061772">
+              <Link href="https://apps.apple.com/us/app/10-minute-school/id1577061772">
                 <div
                   className="rounded-md opacity-0 transition-opacity duration-300 ease-in-out"
                   style={{ fontSize: 0, opacity: 1 }}
                 >
-                  <img
+                  <Image
                     alt="ios download"
-                    data-original-src="https://cdn.10minuteschool.com/images/ios-store-icon_1695731704002.png"
-                    draggable="false"
-                    loading="lazy"
                     width={156}
                     height={49}
-                    decoding="async"
-                    data-nimg={1}
-                    className=""
-                    style={{ color: "transparent" }}
                     src="https://cdn.10minuteschool.com/images/ios-store-icon_1695731704002.png?w=156&h=49"
                   />
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

@@ -1,4 +1,4 @@
-import { Fragment } from "react";
+/* eslint-disable react/jsx-key */
 
 const brands = [
   <svg
@@ -355,9 +355,13 @@ export function Brands() {
       </p>
       <div className="scrollbar-hide mb-4 overflow-x-auto">
         <div className="flex min-w-[800px] flex-nowrap justify-between opacity-30">
-          {brands.map((brand, i) => (
-            <Fragment key={i * 69}>{brand}</Fragment>
-          ))}
+          {brands.map((brand, i) => {
+            return (
+              <>
+                <div key={i * 67}>{brand}</div>
+              </>
+            );
+          })}
         </div>
       </div>
       <div className="text-center text-gray-400">

@@ -22,7 +22,7 @@ export function NavMenu() {
                 <ChevronDownIcon className="size-5 shrink-0 text-muted-foreground transition-transform duration-200 group-hover:text-green-500" />
               </DropdownMenuTrigger>
               <DropdownMenuContent className="z-[999]">
-                {links.map(({ label, href, icon }) => (
+                {links.map(({ label, icon }) => (
                   <DropdownMenuItem
                     className="flex cursor-pointer items-center gap-x-2 rounded px-4 py-3 text-base font-medium text-[#4B5563] outline-0 hover:bg-gray-100"
                     key={label}

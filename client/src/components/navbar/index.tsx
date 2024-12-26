@@ -2,15 +2,14 @@ import { auth } from "@/auth";
 import { Logo } from "@/components/logo";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { buttonVariants } from "@/components/ui/button";
-import { signOut } from "next-auth/react";
 import Link from "next/link";
 import { LanguageSwitch } from "./language-switch";
+import { LogoutButton } from "./logout-button";
 import { MobileNavMenu } from "./mobile-nav-menu";
 import { MobileSearch } from "./mobile-search";
 import { NavMenu } from "./nav-menu";
 import { Phone } from "./phone";
 import { Search } from "./search";
-import { LogoutButton } from "./logout-button";
 
 export async function Navbar() {
   const session = await auth();
