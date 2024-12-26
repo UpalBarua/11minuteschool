@@ -1,2 +1,2 @@
-const api = "http://localhost:8080/api";
+const api = "https://11minuteschool-server.vercel.app/api";
 export default api;
