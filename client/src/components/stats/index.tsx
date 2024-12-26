@@ -28,7 +28,7 @@ export function Stats() {
             key={label}
           >
             <CountUp number={number} />
-            <p className="text-sm font-medium leading-[30px] md:text-xl">
+            <p className="text-center text-sm font-medium leading-[30px] md:text-xl">
               {label}
             </p>
           </div>

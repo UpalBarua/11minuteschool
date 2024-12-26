@@ -11,7 +11,7 @@ export function Resources() {
           <h2 className="mb-4 text-center text-2xl font-[600] leading-[30px] text-white md:text-left md:text-[32px] md:leading-[48px]">
             সেরা শিক্ষকের তৈরি ক্লাস নোট এবং লেকচার শিট প্রয়োজন?
           </h2>
-          <div className="w-full px-6 md:max-w-max md:px-0">
+          <div className="flex w-full justify-center px-6 md:max-w-max md:justify-start md:px-0">
             <Link
               className={buttonVariants({
                 size: "lg",
