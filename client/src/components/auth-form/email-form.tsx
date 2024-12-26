@@ -47,7 +47,7 @@ export function EmailForm({
   function onSubmit({ email }: TEmailFormSchema) {
     startTransition(async () => {
       try {
-        const response = await fetch(`${api}/api/users/${email}`).then((res) =>
+        const response = await fetch(`${api}/users/${email}`).then((res) =>
           res.json(),
         );
 
