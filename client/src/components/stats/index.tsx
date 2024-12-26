@@ -14,10 +14,10 @@ export function Stats() {
       }}
     >
       <div className="text-center">
-        <h2 className="text-[21px] font-bold leading-[30px] text-white md:text-[44px] md:font-semibold md:leading-[56px]">
+        <h2 className="pb-4 text-[21px] font-bold leading-[30px] text-white md:text-[44px] md:font-semibold md:leading-[56px]">
           ২০২২-২৪ শিক্ষাবর্ষে টেন মিনিট স্কুলের এডমিশন সাফল্য
         </h2>
-        <p className="text-sm text-white md:text-[21px] md:leading-[30px]">
+        <p className="pb-6 text-sm text-white md:text-[21px] md:leading-[30px]">
           তোমাদের সাফল্যই আমাদের অনুপ্রেরণা
         </p>
       </div>
