@@ -9,33 +9,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { LearnMore } from "@/components/ui/learn-more";
-
-const skillCourses = [
-  {
-    src: "https://cdn.10ms.com/builder/sections/resources/images/IELTS-Live-Batch-Web-Carousel-5_%281%29_1724224897864.jpg?w=94&h=133",
-  },
-  {
-    src: "https://cdn.10ms.com/builder/sections/resources/images/GBEG_1719211393710.jpg?w=94&h=133",
-  },
-  {
-    src: "https://cdn.10ms.com/builder/sections/resources/images/GBSE_1718879517937.jpg?w=94&h=133",
-  },
-  {
-    src: "https://cdn.10minuteschool.com/images/ielts_1700654663556.png?w=94&h=133",
-  },
-  {
-    src: "https://cdn.10ms.com/builder/sections/resources/images/Emkf_1718879537672.jpg?w=94&h=133",
-  },
-  {
-    src: "https://cdn.10minuteschool.com/images/facebook_marketing_1700654446863.jpg?w=94&h=133",
-  },
-  {
-    src: "https://cdn.10minuteschool.com/images/graphic_design_kore_freelancing_1733747339479.jpg?w=94&h=133",
-  },
-  {
-    src: "https://cdn.10ms.com/builder/sections/resources/images/YT_1727870084815.jpg?w=94&h=133",
-  },
-] as const;
+import data from "@/data/data.json";
 
 export function SkillCourses() {
   return (
@@ -48,14 +22,14 @@ export function SkillCourses() {
       </p>
       <Carousel className="mb-4 w-full max-w-full md:mb-6">
         <CarouselContent>
-          {skillCourses.map(({ src }) => (
+          {data.skillCourses.map(({ src, href }) => (
             <CarouselItem
               className="basis-1/3 py-2 sm:basis-1/4 md:basis-1/5"
               key={src}
             >
               <Link
                 className="w-24 flex-shrink-0 snap-start"
-                href="/"
+                href={href}
                 key={src}
               >
                 <Image

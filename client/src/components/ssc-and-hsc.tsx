@@ -1,36 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-const courses = [
-  {
-    imgUrl:
-      "https://cdn.10minuteschool.com/images/thumbnails/HSC_26_OB_Thumbnails/hsc-2026-online-batch-science-group-thumbnail.jpg?w=272&h=152",
-    title: "HSC 26 অনলাইন ব্যাচ (ফিজিক্স, কেমিস্ট্রি, ম্যাথ, বায়োলজি)",
-    price: 3500,
-    href: "/",
-  },
-  {
-    imgUrl:
-      "https://cdn.10minuteschool.com/images/thumbnails/HSC_26_OB_Thumbnails/hsc-2026-online-batch-all-group-thumbnail.jpg?w=272&h=152",
-    title: "HSC 26 অনলাইন ব্যাচ (বাংলা, ইংরেজি, তথ্য ও যোগাযোগ প্রযুক্তি)",
-    price: 4000,
-    href: "/",
-  },
-  {
-    imgUrl:
-      "https://cdn.10minuteschool.com/images/k-12-courses/hsc_25_ob.jpeg?w=272&h=152",
-    title: "HSC 25 অনলাইন ব্যাচ (ফিজিক্স, কেমিস্ট্রি, ম্যাথ, বায়োলজি)",
-    price: 3000,
-    href: "/",
-  },
-  {
-    imgUrl:
-      "https://cdn.10minuteschool.com/images/HSC_25_OB_BEI_16x9_1697450542715.webp?w=272&h=152",
-    title: "HSC 25 অনলাইন ব্যাচ ২.০ (বাংলা, ইংরেজি, তথ্য ও যোগাযোগ প্রযুক্তি)",
-    price: "৳ 3500",
-    href: "/",
-  },
-] as const;
+import data from "@/data/data.json";
 
 const icon = (
   <svg
@@ -87,7 +58,7 @@ export function SscAndHsc() {
       </div>
       <div className="max-w-screen-xl overflow-x-auto md:w-3/4">
         <div className="justify-start gap-6 md:flex md:flex-nowrap">
-          {courses.map(({ imgUrl, title, price, href }) => (
+          {data.sscAndHscCourses.map(({ imgUrl, title, price, href }) => (
             <Link href={href} key={imgUrl}>
               <div className="xs:border-dashed my-0 mb-4 flex h-full w-full cursor-pointer flex-row gap-4 rounded-none border-b border-[#E5E7EB] pb-4 transition-colors duration-200 sm:max-w-[200px] sm:flex-col sm:rounded sm:border sm:pb-0 md:min-w-64 md:hover:border-green-500">
                 <div className="w-auto min-w-[100px] max-w-[144px] overflow-hidden rounded sm:max-w-full sm:rounded-b-none">

@@ -9,79 +9,7 @@ import {
 import Link from "next/link";
 import Image from "next/image";
 import { buttonVariants } from "./ui/button";
-
-const courses = [
-  {
-    imgUrl:
-      "https://cdn.10minuteschool.com/images/thumbnails/BCS_Preli_Recorded_Course_Thumbnail.jpg?w=351&h=198",
-    title: "বিসিএস প্রিলি রেকর্ডেড কোর্স",
-    instructor: "Farhan Sakib +20",
-    href: "",
-  },
-  {
-    imgUrl:
-      "https://cdn.10minuteschool.com/images/skills/Updated_Thumbnail_v3/BankJ.jpg?w=351&h=198",
-    title: "ব্যাংক জবস কোর্স",
-    instructor: "Akif Masumi +8",
-    href: "",
-  },
-  {
-    imgUrl:
-      "https://cdn.10minuteschool.com/images/skills/Updated_Thumbnail_v3/shorkari_chakri_prostuti_rac.jpg?w=351&h=198",
-    title: "সরকারি চাকরি প্রস্তুতি বেসিক কোর্স",
-    instructor: "Akif Masumi +10",
-    href: "",
-  },
-  {
-    imgUrl:
-      "https://cdn.10minuteschool.com/images/thumbnails/english-for-govt-jobs-16x9-updated.jpg?w=351&h=198",
-    title: "English for Govt. Jobs",
-    instructor: "Shahnawaz Hossain Jay",
-    href: "",
-  },
-  {
-    imgUrl:
-      "https://cdn.10minuteschool.com/images/thumbnails/gk-course-for-govt-jobs-thumbnail.jpg?w=351&h=198",
-    title: "GK for Govt. Jobs",
-    instructor: "আব্দুর রহমান শ্রাবণ",
-    href: "",
-  },
-  {
-    imgUrl:
-      "https://cdn.10minuteschool.com/images/thumbnails/PATR23/PATR_updated_thumbnail_May_2023.jpg?w=351&h=198",
-    title: "প্রাথমিক সহকারী শিক্ষক নিয়োগ পরীক্ষা কোর্স - ২০২৩",
-    instructor: "Farhan Sakib +3",
-    href: "",
-  },
-  {
-    imgUrl:
-      "https://cdn.10minuteschool.com/images/skills/Updated_Thumbnail_v3/bcs_qs_thumbnail.jpg?w=351&h=198",
-    title: "বিসিএস প্রশ্ন সমাধান",
-    instructor: "Akif Masumi +3",
-    href: "",
-  },
-  {
-    imgUrl:
-      "https://cdn.10minuteschool.com/images/thumbnails/bank_jobs_question_solve_course_model_test.jpg?w=351&h=198",
-    title: "ব্যাংক জবস প্রশ্ন সমাধান + মডেল টেস্ট কোর্স",
-    instructor: "Akif Masumi +2",
-    href: "",
-  },
-  {
-    imgUrl:
-      "https://cdn.10minuteschool.com/images/thumbnails/ministry-jobs-question-solve-model-test-thumbnail.jpg?w=351&h=198",
-    title: "মিনিস্ট্রি জবস প্রশ্ন সমাধান + মডেল টেস্ট কোর্স",
-    instructor: "Akif Masumi +4",
-    href: "",
-  },
-  {
-    imgUrl:
-      "https://cdn.10minuteschool.com/images/skills/Updated_Thumbnail_v3/BCS_preli.jpg?w=351&h=198",
-    title: "বিসিএস প্রিলি মডেল টেস্ট",
-    instructor: "সামিউর রহমান +5",
-    href: "",
-  },
-] as const;
+import data from "@/data/data.json";
 
 const icon = (
   <svg
@@ -131,7 +59,7 @@ export function JobPreparation() {
       </div>
       <Carousel className="mb-4 w-full max-w-full md:mb-6">
         <CarouselContent>
-          {courses.map(({ title, imgUrl, instructor, href }) => (
+          {data.jobCourses.map(({ title, imgUrl, instructor, href }) => (
             <CarouselItem
               className="py-2 sm:basis-1/2 md:basis-1/3 lg:basis-1/4"
               key={title}

@@ -1,53 +1,7 @@
+import { LearnMore } from "@/components/ui/learn-more";
+import data from "@/data/data.json";
 import Image from "next/image";
 import Link from "next/link";
-import { LearnMore } from "@/components/ui/learn-more";
-
-export const offlineCourses = [
-  {
-    imgUrl:
-      "https://cdn.10minuteschool.com/images/SEJ_Thumbnails_1x1_%281%29_1732778436068.png?w=94&h=94",
-    name: "Spoken English Junior",
-    description: "৪র্থ-১০ম শ্রেণির শিক্ষার্থীদের জন্য",
-    href: "https://10minuteschool.com/product/spoken-english-junior/",
-  },
-  {
-    imgUrl:
-      "https://cdn.10minuteschool.com/images/IELTS_Thumbnails_1732778416993.png?w=94&h=94",
-    name: "IELTS Programme",
-    description: "১,০০০+ প্র্যাকটিস ম্যাটেরিয়ালের এক্সেস",
-    href: "https://10minuteschool.com/product/ielts-programme/",
-  },
-  {
-    imgUrl:
-      "https://cdn.10minuteschool.com/images/English_Foundation_Image_1732778452607.png?w=94&h=94",
-    name: "English Foundation Programme",
-    description: "Grammar এর প্রয়োজনীয় সব টপিকের উপর বিস্তারিত ক্লাস",
-    href: "https://10minuteschool.com/product/english-foundation-programme/",
-  },
-];
-
-const locations = [
-  {
-    label: "উত্তরা",
-    href: "/",
-  },
-  {
-    label: "পান্থপথ",
-    href: "/",
-  },
-  {
-    label: "মিরপুর",
-    href: "/",
-  },
-  {
-    label: "মগবাজার",
-    href: "/",
-  },
-  {
-    label: "চকবাজার, চট্টগ্রাম",
-    href: "/",
-  },
-] as const;
 
 export function OfflineCourses() {
   return (
@@ -60,7 +14,7 @@ export function OfflineCourses() {
       </p>
       <div className="no-scrollbar max-w-full snap-x snap-mandatory overflow-x-auto">
         <ul className="mb-6 flex flex-nowrap items-center gap-2 md:justify-center">
-          {locations.map(({ label, href }) => (
+          {data.locations.map(({ label, href }) => (
             <a
               className="flex snap-center items-center gap-2 rounded-lg bg-white/5 px-4 py-2 text-sm"
               key={label}
@@ -93,7 +47,7 @@ export function OfflineCourses() {
         </ul>
       </div>
       <div className="mb-6 flex flex-col justify-center gap-4 md:flex-row">
-        {offlineCourses.map(({ href, name, imgUrl, description }) => (
+        {data.offlineCourses.map(({ href, name, imgUrl, description }) => (
           <Link
             className="flex flex-1 items-center gap-3 rounded-2xl px-4 py-3 backdrop-blur-sm md:max-w-[33.33%]"
             href={href}

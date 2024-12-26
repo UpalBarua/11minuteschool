@@ -5,39 +5,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-
-const testimonials = [
-  {
-    testimonial:
-      "কোর্সটির প্রতিটি সেকশনে ছিল স্পষ্ট নির্দেশনা । বিশেষ করে, “Reading” এবং “Writing” সেকশন এতটাই informative ছিল যা আমার জন্য Mock Test এবং Real Exam কে সহজ করে তুলেছিল। আমার সবচেয়ে ভালো লেগেছে “Writing Part”.",
-    name: "Tahiya Faiza",
-    profession: "Teaching Assistant, Brac University",
-  },
-  {
-    testimonial:
-      "অফলাইনে শেখার মত সময় হয়ে উঠছিল না তাই অনলাইন কোর্স কে বেছে নেওয়া । কোর্সটিতে খুব সুন্দর করে হরফ তানভীন মাদ পড়ানো হয়েছে । খুব সহজেই প্রতিদিন প্র্যাকটিস করে খুব দ্রুত শুদ্ধ তেলাওয়াত আয়ত্ত করতে পেরেছি।",
-    name: "Zakirul Islam",
-    profession: "Businessman",
-  },
-  {
-    testimonial:
-      "আমার একটি অনলাইন পেজ ছিল কিন্তু পেইজটিকে নিয়ে কিভাবে সামনে আগাবে কোন কিছু বুঝতে পারছিলাম না । কোর্সটি করার মাধ্যমে কিভাবে একটি বেসিক পোস্ট দিবো কিভাবে ইউজ করব কিভাবে কন্টাক্ট করবো শিখতে পেরেছি।",
-    name: "Hasibur Rahman",
-    profession: "Online Business Owner",
-  },
-  {
-    testimonial:
-      "টেন মিনিট স্কুলের অনলাইন ব্যাচে ইংরেজি ক্লাস করার পর ইংরেজি বিষয়ে আমি ৯০+ মার্কস পেয়েছি। এছাড়াও টেন মিনিট স্কুলের লাইভ চ্যাট, পোল এবং লিডারবোর্ড ফিচারটি চমৎকার যা আমাদের প্রতিনিয়ত পড়াশোনার আগ্রহ বাড়াতে সাহায্য করেছে।",
-    name: "Mushfik Jaman",
-    profession: "Class 8, Bedkashi Collegiate School, Khulna",
-  },
-  {
-    testimonial:
-      "অনলাইন ব্যাচের ক্লাসের সবচেয়ে চমৎকার বিষয় হলো ক্লাসে পড়ানোর টেকনিক। প্রত্যেকটি শিক্ষক এত যত্ন করে ক্লাসগুলো করান যে আমার বাচ্চা ক্লাসগুলো খুব এঞ্জয় করে। পড়াশোনা এমন মজারই হওয়া দরকার! এছাড়া, মান্থলি এক্সাম, লেকচার শীট গুলো ও খুবই মানসম্মত।",
-    name: "Miftahul Jannat",
-    profession: "Class 7",
-  },
-] as const;
+import data from "@/data/data.json";
 
 export function Testimonials() {
   return (
@@ -58,7 +26,7 @@ export function Testimonials() {
         </div>
         <Carousel className="mb-4 w-full max-w-full md:mb-6">
           <CarouselContent>
-            {testimonials.map(({ name, testimonial, profession }) => (
+            {data.testimonials.map(({ name, testimonial, profession }) => (
               <CarouselItem
                 className="py-2 sm:basis-1/2 md:basis-1/3 lg:basis-1/4"
                 key={name}

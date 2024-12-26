@@ -1,32 +1,12 @@
 "use client";
 
+import data from "@/data/data.json";
 import { ChevronRightIcon } from "lucide-react";
 import Link from "next/link";
 import LiteYouTubeEmbed from "react-lite-youtube-embed";
 import "react-lite-youtube-embed/dist/LiteYouTubeEmbed.css";
 
 import { buttonVariants } from "@/components/ui/button";
-
-const offerings = [
-  {
-    title: "সব বিষয়ের প্রতি অধ্যায়েই হবে ইচ্ছেমত অনুশীলন",
-    description:
-      "অনলাইন ব্যাচের লাইব্রেরীতে থাকছে সব বিষয়ের অধ্যায়-ভিত্তিক প্রশ্ন অনুশীলনের সুযোগ।",
-    videoId: "HyMpGuQ9Th0",
-  },
-  {
-    title: "যতই হোক প্রশ্ন, ক্লাসেই সব সমাধান!",
-    description:
-      "লাইভ ক্লাসে থাকবে ২ জন শিক্ষক! একজন পড়াবেন, আরেকজন চ্যাটে শিক্ষার্থীদের প্রশ্নের উত্তর দিবেন।",
-    videoId: "UoC8xEqfVxs",
-  },
-  {
-    title: "বাবা-মা এখন টেনশন ফ্রি!",
-    description:
-      "ব্যাচে ও কী পড়ছে? কেমন করছে? সব আপডেট জানা যাবে বিষয়ভিত্তিক প্রোগ্রেস রিপোর্ট দেখে, ঘরে বসেই।",
-    videoId: "kK7UYxXk2AM",
-  },
-] as const;
 
 const icon = (
   <svg
@@ -95,7 +75,7 @@ export function Offerings() {
         </p>
       </div>
       <ul className="grid grid-cols-1 gap-4 md:grid-cols-3">
-        {offerings.map(({ videoId, title, description }) => (
+        {data.offerings.map(({ videoId, title, description }) => (
           <li className="rounded-md border p-4" key={title}>
             <div className="relative mb-6 aspect-video w-full overflow-hidden rounded-md">
               <LiteYouTubeEmbed id={videoId} title={title} />

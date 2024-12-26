@@ -1,5 +1,4 @@
 import { Brands } from "./brands";
-import { Categories } from "./categories";
 import { Courses } from "./courses";
 
 const courseDetails = [
