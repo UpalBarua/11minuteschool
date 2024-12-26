@@ -1,5 +1,6 @@
 import { Brands } from "./brands";
 import { Courses } from "./courses";
+import { MotionDiv } from "../motion-div";
 
 const courseDetails = [
   "দেশসেরা শিক্ষক",
@@ -44,61 +45,78 @@ const icon = (
 export function Skills() {
   return (
     <section className="full-width bg-black py-8 md:py-28">
-      <div className="mx-auto max-w-6xl">
-        <div className="mb-14 grid justify-items-center text-center text-white">
-          <h2 className="flex items-center justify-center gap-2 pb-3 text-sm font-medium md:pb-6 md:text-lg">
-            {icon}
-            <span>স্কিলস</span>
-          </h2>
-          <p className="mb-2 text-2xl font-semibold leading-[32px] md:mb-4 md:text-[44px] md:leading-[56px]">
-            দেশসেরা স্কিল ডেভেলপমেন্ট প্লাটফর্ম
-          </p>
-          <div className="mb-7 text-sm font-normal leading-[22px] text-[#9CA3AF] md:mb-4 md:text-lg md:leading-7 md:tracking-normal">
-            <ul className="flex flex-wrap justify-center gap-3 md:gap-6">
-              {courseDetails.map((detail) => (
-                <li className="flex items-center gap-1 md:gap-4" key={detail}>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width={24}
-                    height={24}
-                    fill="none"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      fill="#6294F8"
-                      fillRule="evenodd"
-                      d="M16.295 9.605l-4.568 6a1 1 0 01-.789.395h-.007c-.307 0-.597-.142-.787-.383l-2.432-3.108a1 1 0 111.575-1.232l1.633 2.087 3.784-4.97a1 1 0 011.591 1.211zM12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2z"
-                      clipRule="evenodd"
-                    />
-                    <mask
-                      id="mask0_9507_68408"
-                      style={{ maskType: "alpha" }}
-                      width={20}
-                      height={21}
-                      x={2}
-                      y={2}
-                      maskUnits="userSpaceOnUse"
+      <MotionDiv
+        initial={{
+          y: 100,
+          opacity: 0,
+        }}
+        whileInView={{
+          y: 0,
+          opacity: 1,
+        }}
+        transition={{
+          duration: 0.75,
+        }}
+        viewport={{
+          once: true,
+        }}
+      >
+        <div className="mx-auto max-w-6xl">
+          <div className="mb-14 grid justify-items-center text-center text-white">
+            <h2 className="flex items-center justify-center gap-2 pb-3 text-sm font-medium md:pb-6 md:text-lg">
+              {icon}
+              <span>স্কিলস</span>
+            </h2>
+            <p className="mb-2 text-2xl font-semibold leading-[32px] md:mb-4 md:text-[44px] md:leading-[56px]">
+              দেশসেরা স্কিল ডেভেলপমেন্ট প্লাটফর্ম
+            </p>
+            <div className="mb-7 text-sm font-normal leading-[22px] text-[#9CA3AF] md:mb-4 md:text-lg md:leading-7 md:tracking-normal">
+              <ul className="flex flex-wrap justify-center gap-3 md:gap-6">
+                {courseDetails.map((detail) => (
+                  <li className="flex items-center gap-1 md:gap-4" key={detail}>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width={24}
+                      height={24}
+                      fill="none"
+                      viewBox="0 0 24 24"
                     >
                       <path
-                        fill="#fff"
+                        fill="#6294F8"
                         fillRule="evenodd"
                         d="M16.295 9.605l-4.568 6a1 1 0 01-.789.395h-.007c-.307 0-.597-.142-.787-.383l-2.432-3.108a1 1 0 111.575-1.232l1.633 2.087 3.784-4.97a1 1 0 011.591 1.211zM12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2z"
                         clipRule="evenodd"
                       />
-                    </mask>
-                    <g mask="url(#mask0_9507_68408)">
-                      <path fill="#6294F8" d="M0 0H24V24H0z" />
-                    </g>
-                  </svg>{" "}
-                  {detail}
-                </li>
-              ))}
-            </ul>
+                      <mask
+                        id="mask0_9507_68408"
+                        style={{ maskType: "alpha" }}
+                        width={20}
+                        height={21}
+                        x={2}
+                        y={2}
+                        maskUnits="userSpaceOnUse"
+                      >
+                        <path
+                          fill="#fff"
+                          fillRule="evenodd"
+                          d="M16.295 9.605l-4.568 6a1 1 0 01-.789.395h-.007c-.307 0-.597-.142-.787-.383l-2.432-3.108a1 1 0 111.575-1.232l1.633 2.087 3.784-4.97a1 1 0 011.591 1.211zM12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2z"
+                          clipRule="evenodd"
+                        />
+                      </mask>
+                      <g mask="url(#mask0_9507_68408)">
+                        <path fill="#6294F8" d="M0 0H24V24H0z" />
+                      </g>
+                    </svg>{" "}
+                    {detail}
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
+          <Courses />
+          <Brands />
         </div>
-        <Courses />
-        <Brands />
-      </div>
+      </MotionDiv>
     </section>
   );
 }

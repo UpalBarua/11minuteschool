@@ -5,6 +5,7 @@ import { ChevronRightIcon } from "lucide-react";
 import Link from "next/link";
 import LiteYouTubeEmbed from "react-lite-youtube-embed";
 import "react-lite-youtube-embed/dist/LiteYouTubeEmbed.css";
+import { MotionDiv } from "./motion-div";
 
 import { buttonVariants } from "@/components/ui/button";
 
@@ -60,40 +61,57 @@ const icon = (
 
 export function Offerings() {
   return (
-    <section className="grid justify-items-center py-8 md:py-28">
-      <div className="max-w-[80ch] px-4 text-center md:mb-20">
-        <h2 className="flex items-center justify-center gap-2 pb-3 text-sm font-medium text-[#ff5733] md:pb-6 md:text-lg">
-          {icon}
-          <span>ক্লাস ৬-১০</span>
-        </h2>
-        <p className="mb-2 text-2xl font-semibold leading-[32px] md:mb-4 md:text-[44px] md:leading-[56px]">
-          বছর জুড়ে অনলাইন ব্যাচে কী কী থাকছে?
-        </p>
-        <p className="mb-7 text-sm font-normal leading-[22px] text-muted-foreground md:mb-4 md:text-lg md:leading-7 md:tracking-normal">
-          সেরা শিক্ষকদের পরিচর্যায় দেশের যেকোন প্রান্ত থেকে অব্যাহত থাকুক
-          পড়াশুনার অগ্রযাত্রা{" "}
-        </p>
-      </div>
-      <ul className="grid grid-cols-1 gap-4 md:grid-cols-3">
-        {data.offerings.map(({ videoId, title, description }) => (
-          <li className="rounded-md border p-4" key={title}>
-            <div className="relative mb-6 aspect-video w-full overflow-hidden rounded-md">
-              <LiteYouTubeEmbed id={videoId} title={title} />
-            </div>
-            <h3 className="pb-2 text-xl font-semibold">{title}</h3>
-            <p className="text-sm font-normal text-muted-foreground md:text-base">
-              {description}
-            </p>
-          </li>
-        ))}
-      </ul>
-      <Link
-        className={buttonVariants({ size: "lg", className: "mt-2 md:mt-20" })}
-        href="/"
-      >
-        <span>আপনার ক্লাস বেছে নিন</span>
-        <ChevronRightIcon className="size-6" />
-      </Link>
-    </section>
+    <MotionDiv
+      initial={{
+        y: 100,
+        opacity: 0,
+      }}
+      whileInView={{
+        y: 0,
+        opacity: 1,
+      }}
+      transition={{
+        duration: 0.75,
+      }}
+      viewport={{
+        once: true,
+      }}
+    >
+      <section className="grid justify-items-center py-8 md:py-28">
+        <div className="max-w-[80ch] px-4 text-center md:mb-20">
+          <h2 className="flex items-center justify-center gap-2 pb-3 text-sm font-medium text-[#ff5733] md:pb-6 md:text-lg">
+            {icon}
+            <span>ক্লাস ৬-১০</span>
+          </h2>
+          <p className="mb-2 text-2xl font-semibold leading-[32px] md:mb-4 md:text-[44px] md:leading-[56px]">
+            বছর জুড়ে অনলাইন ব্যাচে কী কী থাকছে?
+          </p>
+          <p className="mb-7 text-sm font-normal leading-[22px] text-muted-foreground md:mb-4 md:text-lg md:leading-7 md:tracking-normal">
+            সেরা শিক্ষকদের পরিচর্যায় দেশের যেকোন প্রান্ত থেকে অব্যাহত থাকুক
+            পড়াশুনার অগ্রযাত্রা{" "}
+          </p>
+        </div>
+        <ul className="grid grid-cols-1 gap-4 md:grid-cols-3">
+          {data.offerings.map(({ videoId, title, description }) => (
+            <li className="rounded-md border p-4" key={title}>
+              <div className="relative mb-6 aspect-video w-full overflow-hidden rounded-md">
+                <LiteYouTubeEmbed id={videoId} title={title} />
+              </div>
+              <h3 className="pb-2 text-xl font-semibold">{title}</h3>
+              <p className="text-sm font-normal text-muted-foreground md:text-base">
+                {description}
+              </p>
+            </li>
+          ))}
+        </ul>
+        <Link
+          className={buttonVariants({ size: "lg", className: "mt-2 md:mt-20" })}
+          href="/"
+        >
+          <span>আপনার ক্লাস বেছে নিন</span>
+          <ChevronRightIcon className="size-6" />
+        </Link>
+      </section>
+    </MotionDiv>
   );
 }

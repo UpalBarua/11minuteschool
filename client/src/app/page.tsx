@@ -1,4 +1,5 @@
 import { AdmissionTest } from "@/components/admission-test";
+import { MotionDiv } from "@/components/motion-div";
 import { Banner } from "@/components/banner";
 import { JobPreparation } from "@/components/job-preparation";
 import { Offerings } from "@/components/offerings";
