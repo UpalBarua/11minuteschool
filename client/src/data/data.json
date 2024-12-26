@@ -1,0 +1,792 @@
+{
+  "academicCourses": [
+    {
+      "label": "ক্লাস ৬,৭,৮",
+      "icon": "https://cdn.10minuteschool.com/images/image_6344663_1733036653015.png?w=65&h=65"
+    },
+    {
+      "label": "ক্লাস ৯, ১০ ",
+      "icon": "https://cdn.10minuteschool.com/images/9-10_1732778140427.png?w=65&h=65"
+    },
+    {
+      "label": "SSC ২৫",
+      "icon": "https://cdn.10minuteschool.com/images/ssc_1732778162589.png?w=65&h=65"
+    },
+    {
+      "label": "HSC ২৫, ২৬",
+      "icon": "https://cdn.10minuteschool.com/images/hscbag_1732778180651.png?w=65&h=65"
+    }
+  ],
+  "skillCourses": [
+    {
+      "src": "https://cdn.10ms.com/builder/sections/resources/images/IELTS-Live-Batch-Web-Carousel-5_%281%29_1724224897864.jpg?w=94&h=133",
+      "href": "/"
+    },
+    {
+      "src": "https://cdn.10ms.com/builder/sections/resources/images/GBEG_1719211393710.jpg?w=94&h=133",
+      "href": "/"
+    },
+    {
+      "src": "https://cdn.10ms.com/builder/sections/resources/images/GBSE_1718879517937.jpg?w=94&h=133",
+      "href": "/"
+    },
+    {
+      "src": "https://cdn.10minuteschool.com/images/ielts_1700654663556.png?w=94&h=133",
+      "href": "/"
+    },
+    {
+      "src": "https://cdn.10ms.com/builder/sections/resources/images/Emkf_1718879537672.jpg?w=94&h=133",
+      "href": "/"
+    },
+    {
+      "src": "https://cdn.10minuteschool.com/images/facebook_marketing_1700654446863.jpg?w=94&h=133",
+      "href": "/"
+    },
+    {
+      "src": "https://cdn.10minuteschool.com/images/graphic_design_kore_freelancing_1733747339479.jpg?w=94&h=133",
+      "href": "/"
+    },
+    {
+      "src": "https://cdn.10ms.com/builder/sections/resources/images/YT_1727870084815.jpg?w=94&h=133",
+      "href": "/"
+    }
+  ],
+  "offlineCourses": [
+    {
+      "imgUrl": "https://cdn.10minuteschool.com/images/SEJ_Thumbnails_1x1_%281%29_1732778436068.png?w=94&h=94",
+      "name": "Spoken English Junior",
+      "description": "৪র্থ-১০ম শ্রেণির শিক্ষার্থীদের জন্য",
+      "href": "https://10minuteschool.com/product/spoken-english-junior/"
+    },
+    {
+      "imgUrl": "https://cdn.10minuteschool.com/images/IELTS_Thumbnails_1732778416993.png?w=94&h=94",
+      "name": "IELTS Programme",
+      "description": "১,০০০+ প্র্যাকটিস ম্যাটেরিয়ালের এক্সেস",
+      "href": "https://10minuteschool.com/product/ielts-programme/"
+    },
+    {
+      "imgUrl": "https://cdn.10minuteschool.com/images/English_Foundation_Image_1732778452607.png?w=94&h=94",
+      "name": "English Foundation Programme",
+      "description": "Grammar এর প্রয়োজনীয় সব টপিকের উপর বিস্তারিত ক্লাস",
+      "href": "https://10minuteschool.com/product/english-foundation-programme/"
+    }
+  ],
+  "locations": [
+    {
+      "label": "উত্তরা",
+      "href": "/"
+    },
+    {
+      "label": "পান্থপথ",
+      "href": "/"
+    },
+    {
+      "label": "মিরপুর",
+      "href": "/"
+    },
+    {
+      "label": "মগবাজার",
+      "href": "/"
+    },
+    {
+      "label": "চকবাজার, চট্টগ্রাম",
+      "href": "/"
+    }
+  ],
+  "offerings": [
+    {
+      "title": "সব বিষয়ের প্রতি অধ্যায়েই হবে ইচ্ছেমত অনুশীলন",
+      "description": "অনলাইন ব্যাচের লাইব্রেরীতে থাকছে সব বিষয়ের অধ্যায়-ভিত্তিক প্রশ্ন অনুশীলনের সুযোগ।",
+      "videoId": "HyMpGuQ9Th0"
+    },
+    {
+      "title": "যতই হোক প্রশ্ন, ক্লাসেই সব সমাধান!",
+      "description": "লাইভ ক্লাসে থাকবে ২ জন শিক্ষক! একজন পড়াবেন, আরেকজন চ্যাটে শিক্ষার্থীদের প্রশ্নের উত্তর দিবেন।",
+      "videoId": "UoC8xEqfVxs"
+    },
+    {
+      "title": "বাবা-মা এখন টেনশন ফ্রি!",
+      "description": "ব্যাচে ও কী পড়ছে? কেমন করছে? সব আপডেট জানা যাবে বিষয়ভিত্তিক প্রোগ্রেস রিপোর্ট দেখে, ঘরে বসেই।",
+      "videoId": "kK7UYxXk2AM"
+    }
+  ],
+  "sscAndHscCourses": [
+    {
+      "imgUrl": "https://cdn.10minuteschool.com/images/thumbnails/HSC_26_OB_Thumbnails/hsc-2026-online-batch-science-group-thumbnail.jpg?w=272&h=152",
+      "title": "HSC 26 অনলাইন ব্যাচ (ফিজিক্স, কেমিস্ট্রি, ম্যাথ, বায়োলজি)",
+      "price": 3500,
+      "href": "/"
+    },
+    {
+      "imgUrl": "https://cdn.10minuteschool.com/images/thumbnails/HSC_26_OB_Thumbnails/hsc-2026-online-batch-all-group-thumbnail.jpg?w=272&h=152",
+      "title": "HSC 26 অনলাইন ব্যাচ (বাংলা, ইংরেজি, তথ্য ও যোগাযোগ প্রযুক্তি)",
+      "price": 4000,
+      "href": "/"
+    },
+    {
+      "imgUrl": "https://cdn.10minuteschool.com/images/k-12-courses/hsc_25_ob.jpeg?w=272&h=152",
+      "title": "HSC 25 অনলাইন ব্যাচ (ফিজিক্স, কেমিস্ট্রি, ম্যাথ, বায়োলজি)",
+      "price": 3000,
+      "href": "/"
+    },
+    {
+      "imgUrl": "https://cdn.10minuteschool.com/images/HSC_25_OB_BEI_16x9_1697450542715.webp?w=272&h=152",
+      "title": "HSC 25 অনলাইন ব্যাচ ২.০ (বাংলা, ইংরেজি, তথ্য ও যোগাযোগ প্রযুক্তি)",
+      "price": "৳ 3500",
+      "href": "/"
+    }
+  ],
+  "categorisedCourses": [
+    {
+      "title": "ভাষা শিক্ষা",
+      "coursesCount": "23 Courses",
+      "courses": [
+        {
+          "title": "IELTS LIVE Batch",
+          "instructor": "Zawad Hasan Adib +4",
+          "imgUrl": "https://cdn.10minuteschool.com/images/thumbnails/ielts-live-batch-10-thumbnail.jpg",
+          "href": "/"
+        },
+        {
+          "title": "Spoken English Junior LIVE Batch",
+          "instructor": "Rukhsar Sanjaree +4",
+          "imgUrl": "https://cdn.10minuteschool.com/images/catalog/media/sej-thumbnial_1734278669669.jpg",
+          "href": "/"
+        },
+        {
+          "title": "ঘরে বসে Spoken English",
+          "instructor": "Munzereen Shahid",
+          "imgUrl": "https://cdn.10minuteschool.com/images/thumbnails/skills/ghore-boshe-Spoken-English-course-thumbnail-by-Munzereen-Shahid-16x9.jpg",
+          "href": "/"
+        },
+        {
+          "title": "IELTS Course by Munzereen Shahid",
+          "instructor": "Munzereen Shahid",
+          "imgUrl": "https://cdn.10minuteschool.com/images/thumbnails/IELTS_new_16_9.png",
+          "href": "/"
+        },
+        {
+          "title": "Complete English Grammar Course",
+          "instructor": "Munzereen Shahid",
+          "imgUrl": "https://cdn.10minuteschool.com/images/thumbnails/complete-grammar-course-thumbnail.jpg",
+          "href": "/"
+        },
+        {
+          "title": "সহজে Spoken আরবি",
+          "instructor": "Mahade Hasan",
+          "imgUrl": "https://cdn.10minuteschool.com/images/Thumbnails/sohoje_spoken_arbi_16x9.jpg",
+          "href": "/"
+        },
+        {
+          "title": "IELTS Reading & Listening Mock Tests",
+          "instructor": "",
+          "imgUrl": "https://cdn.10minuteschool.com/images/Thumbnails/IELTS-Listening-Reading-Mock-Tests-Course-Thumbnail_discount-30_16_9.jpg",
+          "href": "/"
+        },
+        {
+          "title": "২৪ ঘণ্টায় কোরআন শিখি",
+          "instructor": "মাওলানা শাইখ মুহাম্মাদ জামাল উদ্দীন",
+          "imgUrl": "https://cdn.10minuteschool.com/images/catalog/media/%C3%A0%C2%A7%C2%A8%C3%A0%C2%A7%C2%AA-%C3%A0%C2%A6%C2%98%C3%A0%C2%A6%C2%A3%C3%A0%C2%A7%C2%8D%C3%A0%C2%A6%C2%9F%C3%A0%C2%A6%C2%BE%C3%A0%C2%A6%C2%AF%C3%A0%C2%A6%C2%BC-%C3%A0%C2%A6%C2%95%C3%A0%C2%A7%C2%8B%C3%A0%C2%A6%C2%B0%C3%A0%C2%A6%C2%86%C3%A0%C2%A6%C2%A8-%C3%A0%C2%A6%C2%B6%C3%A0%C2%A6%C2%BF%C3%A0%C2%A6%C2%96%C3%A0%C2%A6%C2%BF---Course-Thumbnail-PSD_1732445930516.jpg",
+          "href": "/"
+        }
+      ]
+    },
+    {
+      "title": "ফ্রিল্যান্সিং",
+      "coursesCount": "10 Courses",
+      "courses": [
+        {
+          "title": "IELTS LIVE Batch",
+          "instructor": "Zawad Hasan Adib +4",
+          "imgUrl": "https://cdn.10minuteschool.com/images/thumbnails/ielts-live-batch-10-thumbnail.jpg",
+          "href": "/"
+        },
+        {
+          "title": "Spoken English Junior LIVE Batch",
+          "instructor": "Rukhsar Sanjaree +4",
+          "imgUrl": "https://cdn.10minuteschool.com/images/catalog/media/sej-thumbnial_1734278669669.jpg",
+          "href": "/"
+        },
+        {
+          "title": "ঘরে বসে Spoken English",
+          "instructor": "Munzereen Shahid",
+          "imgUrl": "https://cdn.10minuteschool.com/images/thumbnails/skills/ghore-boshe-Spoken-English-course-thumbnail-by-Munzereen-Shahid-16x9.jpg",
+          "href": "/"
+        },
+        {
+          "title": "IELTS Course by Munzereen Shahid",
+          "instructor": "Munzereen Shahid",
+          "imgUrl": "https://cdn.10minuteschool.com/images/thumbnails/IELTS_new_16_9.png",
+          "href": "/"
+        },
+        {
+          "title": "Complete English Grammar Course",
+          "instructor": "Munzereen Shahid",
+          "imgUrl": "https://cdn.10minuteschool.com/images/thumbnails/complete-grammar-course-thumbnail.jpg",
+          "href": "/"
+        },
+        {
+          "title": "সহজে Spoken আরবি",
+          "instructor": "Mahade Hasan",
+          "imgUrl": "https://cdn.10minuteschool.com/images/Thumbnails/sohoje_spoken_arbi_16x9.jpg",
+          "href": "/"
+        },
+        {
+          "title": "IELTS Reading & Listening Mock Tests",
+          "instructor": "",
+          "imgUrl": "https://cdn.10minuteschool.com/images/Thumbnails/IELTS-Listening-Reading-Mock-Tests-Course-Thumbnail_discount-30_16_9.jpg",
+          "href": "/"
+        },
+        {
+          "title": "২৪ ঘণ্টায় কোরআন শিখি",
+          "instructor": "মাওলানা শাইখ মুহাম্মাদ জামাল উদ্দীন",
+          "imgUrl": "https://cdn.10minuteschool.com/images/catalog/media/%C3%A0%C2%A7%C2%A8%C3%A0%C2%A7%C2%AA-%C3%A0%C2%A6%C2%98%C3%A0%C2%A6%C2%A3%C3%A0%C2%A7%C2%8D%C3%A0%C2%A6%C2%9F%C3%A0%C2%A6%C2%BE%C3%A0%C2%A6%C2%AF%C3%A0%C2%A6%C2%BC-%C3%A0%C2%A6%C2%95%C3%A0%C2%A7%C2%8B%C3%A0%C2%A6%C2%B0%C3%A0%C2%A6%C2%86%C3%A0%C2%A6%C2%A8-%C3%A0%C2%A6%C2%B6%C3%A0%C2%A6%C2%BF%C3%A0%C2%A6%C2%96%C3%A0%C2%A6%C2%BF---Course-Thumbnail-PSD_1732445930516.jpg",
+          "href": "/"
+        }
+      ]
+    },
+    {
+      "title": "বান্ডেল",
+      "coursesCount": "13 Courses",
+      "courses": [
+        {
+          "title": "IELTS LIVE Batch",
+          "instructor": "Zawad Hasan Adib +4",
+          "imgUrl": "https://cdn.10minuteschool.com/images/thumbnails/ielts-live-batch-10-thumbnail.jpg",
+          "href": "/"
+        },
+        {
+          "title": "Spoken English Junior LIVE Batch",
+          "instructor": "Rukhsar Sanjaree +4",
+          "imgUrl": "https://cdn.10minuteschool.com/images/catalog/media/sej-thumbnial_1734278669669.jpg",
+          "href": "/"
+        },
+        {
+          "title": "ঘরে বসে Spoken English",
+          "instructor": "Munzereen Shahid",
+          "imgUrl": "https://cdn.10minuteschool.com/images/thumbnails/skills/ghore-boshe-Spoken-English-course-thumbnail-by-Munzereen-Shahid-16x9.jpg",
+          "href": "/"
+        },
+        {
+          "title": "IELTS Course by Munzereen Shahid",
+          "instructor": "Munzereen Shahid",
+          "imgUrl": "https://cdn.10minuteschool.com/images/thumbnails/IELTS_new_16_9.png",
+          "href": "/"
+        },
+        {
+          "title": "Complete English Grammar Course",
+          "instructor": "Munzereen Shahid",
+          "imgUrl": "https://cdn.10minuteschool.com/images/thumbnails/complete-grammar-course-thumbnail.jpg",
+          "href": "/"
+        },
+        {
+          "title": "সহজে Spoken আরবি",
+          "instructor": "Mahade Hasan",
+          "imgUrl": "https://cdn.10minuteschool.com/images/Thumbnails/sohoje_spoken_arbi_16x9.jpg",
+          "href": "/"
+        },
+        {
+          "title": "IELTS Reading & Listening Mock Tests",
+          "instructor": "",
+          "imgUrl": "https://cdn.10minuteschool.com/images/Thumbnails/IELTS-Listening-Reading-Mock-Tests-Course-Thumbnail_discount-30_16_9.jpg",
+          "href": "/"
+        },
+        {
+          "title": "২৪ ঘণ্টায় কোরআন শিখি",
+          "instructor": "মাওলানা শাইখ মুহাম্মাদ জামাল উদ্দীন",
+          "imgUrl": "https://cdn.10minuteschool.com/images/catalog/media/%C3%A0%C2%A7%C2%A8%C3%A0%C2%A7%C2%AA-%C3%A0%C2%A6%C2%98%C3%A0%C2%A6%C2%A3%C3%A0%C2%A7%C2%8D%C3%A0%C2%A6%C2%9F%C3%A0%C2%A6%C2%BE%C3%A0%C2%A6%C2%AF%C3%A0%C2%A6%C2%BC-%C3%A0%C2%A6%C2%95%C3%A0%C2%A7%C2%8B%C3%A0%C2%A6%C2%B0%C3%A0%C2%A6%C2%86%C3%A0%C2%A6%C2%A8-%C3%A0%C2%A6%C2%B6%C3%A0%C2%A6%C2%BF%C3%A0%C2%A6%C2%96%C3%A0%C2%A6%C2%BF---Course-Thumbnail-PSD_1732445930516.jpg",
+          "href": "/"
+        }
+      ]
+    },
+    {
+      "title": "স্কিলস এন্ড আইটি",
+      "coursesCount": "23 Courses",
+      "courses": [
+        {
+          "title": "IELTS LIVE Batch",
+          "instructor": "Zawad Hasan Adib +4",
+          "imgUrl": "https://cdn.10minuteschool.com/images/thumbnails/ielts-live-batch-10-thumbnail.jpg",
+          "href": "/"
+        },
+        {
+          "title": "Spoken English Junior LIVE Batch",
+          "instructor": "Rukhsar Sanjaree +4",
+          "imgUrl": "https://cdn.10minuteschool.com/images/catalog/media/sej-thumbnial_1734278669669.jpg",
+          "href": "/"
+        },
+        {
+          "title": "ঘরে বসে Spoken English",
+          "instructor": "Munzereen Shahid",
+          "imgUrl": "https://cdn.10minuteschool.com/images/thumbnails/skills/ghore-boshe-Spoken-English-course-thumbnail-by-Munzereen-Shahid-16x9.jpg",
+          "href": "/"
+        },
+        {
+          "title": "IELTS Course by Munzereen Shahid",
+          "instructor": "Munzereen Shahid",
+          "imgUrl": "https://cdn.10minuteschool.com/images/thumbnails/IELTS_new_16_9.png",
+          "href": "/"
+        },
+        {
+          "title": "Complete English Grammar Course",
+          "instructor": "Munzereen Shahid",
+          "imgUrl": "https://cdn.10minuteschool.com/images/thumbnails/complete-grammar-course-thumbnail.jpg",
+          "href": "/"
+        },
+        {
+          "title": "সহজে Spoken আরবি",
+          "instructor": "Mahade Hasan",
+          "imgUrl": "https://cdn.10minuteschool.com/images/Thumbnails/sohoje_spoken_arbi_16x9.jpg",
+          "href": "/"
+        },
+        {
+          "title": "IELTS Reading & Listening Mock Tests",
+          "instructor": "",
+          "imgUrl": "https://cdn.10minuteschool.com/images/Thumbnails/IELTS-Listening-Reading-Mock-Tests-Course-Thumbnail_discount-30_16_9.jpg",
+          "href": "/"
+        },
+        {
+          "title": "২৪ ঘণ্টায় কোরআন শিখি",
+          "instructor": "মাওলানা শাইখ মুহাম্মাদ জামাল উদ্দীন",
+          "imgUrl": "https://cdn.10minuteschool.com/images/catalog/media/%C3%A0%C2%A7%C2%A8%C3%A0%C2%A7%C2%AA-%C3%A0%C2%A6%C2%98%C3%A0%C2%A6%C2%A3%C3%A0%C2%A7%C2%8D%C3%A0%C2%A6%C2%9F%C3%A0%C2%A6%C2%BE%C3%A0%C2%A6%C2%AF%C3%A0%C2%A6%C2%BC-%C3%A0%C2%A6%C2%95%C3%A0%C2%A7%C2%8B%C3%A0%C2%A6%C2%B0%C3%A0%C2%A6%C2%86%C3%A0%C2%A6%C2%A8-%C3%A0%C2%A6%C2%B6%C3%A0%C2%A6%C2%BF%C3%A0%C2%A6%C2%96%C3%A0%C2%A6%C2%BF---Course-Thumbnail-PSD_1732445930516.jpg",
+          "href": "/"
+        }
+      ]
+    },
+    {
+      "title": "ডিজাইন এন্ড ক্রিয়েটিভ",
+      "coursesCount": "9 Courses",
+      "courses": [
+        {
+          "title": "IELTS LIVE Batch",
+          "instructor": "Zawad Hasan Adib +4",
+          "imgUrl": "https://cdn.10minuteschool.com/images/thumbnails/ielts-live-batch-10-thumbnail.jpg",
+          "href": "/"
+        },
+        {
+          "title": "Spoken English Junior LIVE Batch",
+          "instructor": "Rukhsar Sanjaree +4",
+          "imgUrl": "https://cdn.10minuteschool.com/images/catalog/media/sej-thumbnial_1734278669669.jpg",
+          "href": "/"
+        },
+        {
+          "title": "ঘরে বসে Spoken English",
+          "instructor": "Munzereen Shahid",
+          "imgUrl": "https://cdn.10minuteschool.com/images/thumbnails/skills/ghore-boshe-Spoken-English-course-thumbnail-by-Munzereen-Shahid-16x9.jpg",
+          "href": "/"
+        },
+        {
+          "title": "IELTS Course by Munzereen Shahid",
+          "instructor": "Munzereen Shahid",
+          "imgUrl": "https://cdn.10minuteschool.com/images/thumbnails/IELTS_new_16_9.png",
+          "href": "/"
+        },
+        {
+          "title": "Complete English Grammar Course",
+          "instructor": "Munzereen Shahid",
+          "imgUrl": "https://cdn.10minuteschool.com/images/thumbnails/complete-grammar-course-thumbnail.jpg",
+          "href": "/"
+        },
+        {
+          "title": "সহজে Spoken আরবি",
+          "instructor": "Mahade Hasan",
+          "imgUrl": "https://cdn.10minuteschool.com/images/Thumbnails/sohoje_spoken_arbi_16x9.jpg",
+          "href": "/"
+        },
+        {
+          "title": "IELTS Reading & Listening Mock Tests",
+          "instructor": "",
+          "imgUrl": "https://cdn.10minuteschool.com/images/Thumbnails/IELTS-Listening-Reading-Mock-Tests-Course-Thumbnail_discount-30_16_9.jpg",
+          "href": "/"
+        },
+        {
+          "title": "২৪ ঘণ্টায় কোরআন শিখি",
+          "instructor": "মাওলানা শাইখ মুহাম্মাদ জামাল উদ্দীন",
+          "imgUrl": "https://cdn.10minuteschool.com/images/catalog/media/%C3%A0%C2%A7%C2%A8%C3%A0%C2%A7%C2%AA-%C3%A0%C2%A6%C2%98%C3%A0%C2%A6%C2%A3%C3%A0%C2%A7%C2%8D%C3%A0%C2%A6%C2%9F%C3%A0%C2%A6%C2%BE%C3%A0%C2%A6%C2%AF%C3%A0%C2%A6%C2%BC-%C3%A0%C2%A6%C2%95%C3%A0%C2%A7%C2%8B%C3%A0%C2%A6%C2%B0%C3%A0%C2%A6%C2%86%C3%A0%C2%A6%C2%A8-%C3%A0%C2%A6%C2%B6%C3%A0%C2%A6%C2%BF%C3%A0%C2%A6%C2%96%C3%A0%C2%A6%C2%BF---Course-Thumbnail-PSD_1732445930516.jpg",
+          "href": "/"
+        }
+      ]
+    },
+    {
+      "title": "ক্যারিয়ার রেডিনেস",
+      "coursesCount": "9 Courses",
+      "courses": [
+        {
+          "title": "IELTS LIVE Batch",
+          "instructor": "Zawad Hasan Adib +4",
+          "imgUrl": "https://cdn.10minuteschool.com/images/thumbnails/ielts-live-batch-10-thumbnail.jpg",
+          "href": "/"
+        },
+        {
+          "title": "Spoken English Junior LIVE Batch",
+          "instructor": "Rukhsar Sanjaree +4",
+          "imgUrl": "https://cdn.10minuteschool.com/images/catalog/media/sej-thumbnial_1734278669669.jpg",
+          "href": "/"
+        },
+        {
+          "title": "ঘরে বসে Spoken English",
+          "instructor": "Munzereen Shahid",
+          "imgUrl": "https://cdn.10minuteschool.com/images/thumbnails/skills/ghore-boshe-Spoken-English-course-thumbnail-by-Munzereen-Shahid-16x9.jpg",
+          "href": "/"
+        },
+        {
+          "title": "IELTS Course by Munzereen Shahid",
+          "instructor": "Munzereen Shahid",
+          "imgUrl": "https://cdn.10minuteschool.com/images/thumbnails/IELTS_new_16_9.png",
+          "href": "/"
+        },
+        {
+          "title": "Complete English Grammar Course",
+          "instructor": "Munzereen Shahid",
+          "imgUrl": "https://cdn.10minuteschool.com/images/thumbnails/complete-grammar-course-thumbnail.jpg",
+          "href": "/"
+        },
+        {
+          "title": "সহজে Spoken আরবি",
+          "instructor": "Mahade Hasan",
+          "imgUrl": "https://cdn.10minuteschool.com/images/Thumbnails/sohoje_spoken_arbi_16x9.jpg",
+          "href": "/"
+        },
+        {
+          "title": "IELTS Reading & Listening Mock Tests",
+          "instructor": "",
+          "imgUrl": "https://cdn.10minuteschool.com/images/Thumbnails/IELTS-Listening-Reading-Mock-Tests-Course-Thumbnail_discount-30_16_9.jpg",
+          "href": "/"
+        },
+        {
+          "title": "২৪ ঘণ্টায় কোরআন শিখি",
+          "instructor": "মাওলানা শাইখ মুহাম্মাদ জামাল উদ্দীন",
+          "imgUrl": "https://cdn.10minuteschool.com/images/catalog/media/%C3%A0%C2%A7%C2%A8%C3%A0%C2%A7%C2%AA-%C3%A0%C2%A6%C2%98%C3%A0%C2%A6%C2%A3%C3%A0%C2%A7%C2%8D%C3%A0%C2%A6%C2%9F%C3%A0%C2%A6%C2%BE%C3%A0%C2%A6%C2%AF%C3%A0%C2%A6%C2%BC-%C3%A0%C2%A6%C2%95%C3%A0%C2%A7%C2%8B%C3%A0%C2%A6%C2%B0%C3%A0%C2%A6%C2%86%C3%A0%C2%A6%C2%A8-%C3%A0%C2%A6%C2%B6%C3%A0%C2%A6%C2%BF%C3%A0%C2%A6%C2%96%C3%A0%C2%A6%C2%BF---Course-Thumbnail-PSD_1732445930516.jpg",
+          "href": "/"
+        }
+      ]
+    },
+    {
+      "title": "কিডস কোর্সসমূহ",
+      "coursesCount": "2 Courses",
+      "courses": [
+        {
+          "title": "IELTS LIVE Batch",
+          "instructor": "Zawad Hasan Adib +4",
+          "imgUrl": "https://cdn.10minuteschool.com/images/thumbnails/ielts-live-batch-10-thumbnail.jpg",
+          "href": "/"
+        },
+        {
+          "title": "Spoken English Junior LIVE Batch",
+          "instructor": "Rukhsar Sanjaree +4",
+          "imgUrl": "https://cdn.10minuteschool.com/images/catalog/media/sej-thumbnial_1734278669669.jpg",
+          "href": "/"
+        },
+        {
+          "title": "ঘরে বসে Spoken English",
+          "instructor": "Munzereen Shahid",
+          "imgUrl": "https://cdn.10minuteschool.com/images/thumbnails/skills/ghore-boshe-Spoken-English-course-thumbnail-by-Munzereen-Shahid-16x9.jpg",
+          "href": "/"
+        },
+        {
+          "title": "IELTS Course by Munzereen Shahid",
+          "instructor": "Munzereen Shahid",
+          "imgUrl": "https://cdn.10minuteschool.com/images/thumbnails/IELTS_new_16_9.png",
+          "href": "/"
+        },
+        {
+          "title": "Complete English Grammar Course",
+          "instructor": "Munzereen Shahid",
+          "imgUrl": "https://cdn.10minuteschool.com/images/thumbnails/complete-grammar-course-thumbnail.jpg",
+          "href": "/"
+        },
+        {
+          "title": "সহজে Spoken আরবি",
+          "instructor": "Mahade Hasan",
+          "imgUrl": "https://cdn.10minuteschool.com/images/Thumbnails/sohoje_spoken_arbi_16x9.jpg",
+          "href": "/"
+        },
+        {
+          "title": "IELTS Reading & Listening Mock Tests",
+          "instructor": "",
+          "imgUrl": "https://cdn.10minuteschool.com/images/Thumbnails/IELTS-Listening-Reading-Mock-Tests-Course-Thumbnail_discount-30_16_9.jpg",
+          "href": "/"
+        },
+        {
+          "title": "২৪ ঘণ্টায় কোরআন শিখি",
+          "instructor": "মাওলানা শাইখ মুহাম্মাদ জামাল উদ্দীন",
+          "imgUrl": "https://cdn.10minuteschool.com/images/catalog/media/%C3%A0%C2%A7%C2%A8%C3%A0%C2%A7%C2%AA-%C3%A0%C2%A6%C2%98%C3%A0%C2%A6%C2%A3%C3%A0%C2%A7%C2%8D%C3%A0%C2%A6%C2%9F%C3%A0%C2%A6%C2%BE%C3%A0%C2%A6%C2%AF%C3%A0%C2%A6%C2%BC-%C3%A0%C2%A6%C2%95%C3%A0%C2%A7%C2%8B%C3%A0%C2%A6%C2%B0%C3%A0%C2%A6%C2%86%C3%A0%C2%A6%C2%A8-%C3%A0%C2%A6%C2%B6%C3%A0%C2%A6%C2%BF%C3%A0%C2%A6%C2%96%C3%A0%C2%A6%C2%BF---Course-Thumbnail-PSD_1732445930516.jpg",
+          "href": "/"
+        }
+      ]
+    },
+    {
+      "title": "প্রফেশনাল কোর্সসমূহ",
+      "coursesCount": "9 Courses",
+      "courses": [
+        {
+          "title": "IELTS LIVE Batch",
+          "instructor": "Zawad Hasan Adib +4",
+          "imgUrl": "https://cdn.10minuteschool.com/images/thumbnails/ielts-live-batch-10-thumbnail.jpg",
+          "href": "/"
+        },
+        {
+          "title": "Spoken English Junior LIVE Batch",
+          "instructor": "Rukhsar Sanjaree +4",
+          "imgUrl": "https://cdn.10minuteschool.com/images/catalog/media/sej-thumbnial_1734278669669.jpg",
+          "href": "/"
+        },
+        {
+          "title": "ঘরে বসে Spoken English",
+          "instructor": "Munzereen Shahid",
+          "imgUrl": "https://cdn.10minuteschool.com/images/thumbnails/skills/ghore-boshe-Spoken-English-course-thumbnail-by-Munzereen-Shahid-16x9.jpg",
+          "href": "/"
+        },
+        {
+          "title": "IELTS Course by Munzereen Shahid",
+          "instructor": "Munzereen Shahid",
+          "imgUrl": "https://cdn.10minuteschool.com/images/thumbnails/IELTS_new_16_9.png",
+          "href": "/"
+        },
+        {
+          "title": "Complete English Grammar Course",
+          "instructor": "Munzereen Shahid",
+          "imgUrl": "https://cdn.10minuteschool.com/images/thumbnails/complete-grammar-course-thumbnail.jpg",
+          "href": "/"
+        },
+        {
+          "title": "সহজে Spoken আরবি",
+          "instructor": "Mahade Hasan",
+          "imgUrl": "https://cdn.10minuteschool.com/images/Thumbnails/sohoje_spoken_arbi_16x9.jpg",
+          "href": "/"
+        },
+        {
+          "title": "IELTS Reading & Listening Mock Tests",
+          "instructor": "",
+          "imgUrl": "https://cdn.10minuteschool.com/images/Thumbnails/IELTS-Listening-Reading-Mock-Tests-Course-Thumbnail_discount-30_16_9.jpg",
+          "href": "/"
+        },
+        {
+          "title": "২৪ ঘণ্টায় কোরআন শিখি",
+          "instructor": "মাওলানা শাইখ মুহাম্মাদ জামাল উদ্দীন",
+          "imgUrl": "https://cdn.10minuteschool.com/images/catalog/media/%C3%A0%C2%A7%C2%A8%C3%A0%C2%A7%C2%AA-%C3%A0%C2%A6%C2%98%C3%A0%C2%A6%C2%A3%C3%A0%C2%A7%C2%8D%C3%A0%C2%A6%C2%9F%C3%A0%C2%A6%C2%BE%C3%A0%C2%A6%C2%AF%C3%A0%C2%A6%C2%BC-%C3%A0%C2%A6%C2%95%C3%A0%C2%A7%C2%8B%C3%A0%C2%A6%C2%B0%C3%A0%C2%A6%C2%86%C3%A0%C2%A6%C2%A8-%C3%A0%C2%A6%C2%B6%C3%A0%C2%A6%C2%BF%C3%A0%C2%A6%C2%96%C3%A0%C2%A6%C2%BF---Course-Thumbnail-PSD_1732445930516.jpg",
+          "href": "/"
+        }
+      ]
+    },
+    {
+      "title": "ফ্রি কোর্সসমূহ",
+      "coursesCount": "29 Courses",
+      "courses": [
+        {
+          "title": "IELTS LIVE Batch",
+          "instructor": "Zawad Hasan Adib +4",
+          "imgUrl": "https://cdn.10minuteschool.com/images/thumbnails/ielts-live-batch-10-thumbnail.jpg",
+          "href": "/"
+        },
+        {
+          "title": "Spoken English Junior LIVE Batch",
+          "instructor": "Rukhsar Sanjaree +4",
+          "imgUrl": "https://cdn.10minuteschool.com/images/catalog/media/sej-thumbnial_1734278669669.jpg",
+          "href": "/"
+        },
+        {
+          "title": "ঘরে বসে Spoken English",
+          "instructor": "Munzereen Shahid",
+          "imgUrl": "https://cdn.10minuteschool.com/images/thumbnails/skills/ghore-boshe-Spoken-English-course-thumbnail-by-Munzereen-Shahid-16x9.jpg",
+          "href": "/"
+        },
+        {
+          "title": "IELTS Course by Munzereen Shahid",
+          "instructor": "Munzereen Shahid",
+          "imgUrl": "https://cdn.10minuteschool.com/images/thumbnails/IELTS_new_16_9.png",
+          "href": "/"
+        },
+        {
+          "title": "Complete English Grammar Course",
+          "instructor": "Munzereen Shahid",
+          "imgUrl": "https://cdn.10minuteschool.com/images/thumbnails/complete-grammar-course-thumbnail.jpg",
+          "href": "/"
+        },
+        {
+          "title": "সহজে Spoken আরবি",
+          "instructor": "Mahade Hasan",
+          "imgUrl": "https://cdn.10minuteschool.com/images/Thumbnails/sohoje_spoken_arbi_16x9.jpg",
+          "href": "/"
+        },
+        {
+          "title": "IELTS Reading & Listening Mock Tests",
+          "instructor": "",
+          "imgUrl": "https://cdn.10minuteschool.com/images/Thumbnails/IELTS-Listening-Reading-Mock-Tests-Course-Thumbnail_discount-30_16_9.jpg",
+          "href": "/"
+        },
+        {
+          "title": "২৪ ঘণ্টায় কোরআন শিখি",
+          "instructor": "মাওলানা শাইখ মুহাম্মাদ জামাল উদ্দীন",
+          "imgUrl": "https://cdn.10minuteschool.com/images/catalog/media/%C3%A0%C2%A7%C2%A8%C3%A0%C2%A7%C2%AA-%C3%A0%C2%A6%C2%98%C3%A0%C2%A6%C2%A3%C3%A0%C2%A7%C2%8D%C3%A0%C2%A6%C2%9F%C3%A0%C2%A6%C2%BE%C3%A0%C2%A6%C2%AF%C3%A0%C2%A6%C2%BC-%C3%A0%C2%A6%C2%95%C3%A0%C2%A7%C2%8B%C3%A0%C2%A6%C2%B0%C3%A0%C2%A6%C2%86%C3%A0%C2%A6%C2%A8-%C3%A0%C2%A6%C2%B6%C3%A0%C2%A6%C2%BF%C3%A0%C2%A6%C2%96%C3%A0%C2%A6%C2%BF---Course-Thumbnail-PSD_1732445930516.jpg",
+          "href": "/"
+        }
+      ]
+    }
+  ],
+  "admissionTestCourses": [
+    {
+      "imgUrl": "https://cdn.10minuteschool.com/images/thumbnails/medical-final-exam-batch-2024-thumbnail-new.jpg?w=351&h=198",
+      "title": "মেডিকেল ফাইনাল এক্সাম ব্যাচ ২০২৪",
+      "instructor": "Dr Sushmita Biswas +1",
+      "href": "/"
+    },
+    {
+      "imgUrl": "https://cdn.10minuteschool.com/images/du_a_qs_up2.jpg?w=351&h=198",
+      "title": "ঢাবি-ক কোশ্চেন সলভ কোর্স",
+      "instructor": "CM Rezaul Karim +7",
+      "href": "/"
+    },
+    {
+      "imgUrl": "https://cdn.10minuteschool.com/images/k-12-courses/adm_medicalqs_v4.jpeg?w=351&h=198",
+      "title": "Medical Admission Question Solve Course",
+      "instructor": "Sharif Alam +9",
+      "href": "/"
+    },
+    {
+      "imgUrl": "https://cdn.10minuteschool.com/images/thumbnails/gst-b-unit-admission-course-thumbnail.jpg?w=351&h=198",
+      "title": "গুচ্ছ B Unit এডমিশন কোর্স - ২০২৪",
+      "instructor": "Farhan Sakib +9",
+      "href": "/"
+    },
+    {
+      "imgUrl": "https://cdn.10minuteschool.com/images/thumbnails/gst-c-unit-admission-course-thumbnail.jpg?w=351&h=198",
+      "title": "গুচ্ছ C Unit এডমিশন কোর্স - ২০২৪",
+      "instructor": "Farhan Sakib +6",
+      "href": "/"
+    },
+    {
+      "imgUrl": "https://cdn.10minuteschool.com/images/thumbnails/gst-a-unit-admission-course-thumbnail.jpg?w=351&h=198",
+      "title": "গুচ্ছ A Unit এডমিশন কোর্স - ২০২৪",
+      "instructor": "Farhan Sakib +13",
+      "href": "/"
+    },
+    {
+      "imgUrl": "https://cdn.10minuteschool.com/images/thumbnails/du-written-private-batch-bangla-and-english-thumbnail.jpg?w=351&h=198",
+      "title": "DU Written (Bangla & English) Private Batch",
+      "instructor": "Farhan Sakib +4",
+      "href": "/"
+    },
+    {
+      "imgUrl": "https://cdn.10minuteschool.com/images/thumbnails/Admission_2024/medical-admission-2024-course-thumbnail.jpg?w=351&h=198",
+      "title": "মেডিকেল এডমিশন কোর্স - ২০২৪",
+      "instructor": "Dr Sushmita Biswas +1",
+      "href": "/"
+    },
+    {
+      "imgUrl": "https://cdn.10minuteschool.com/images/thumbnails/dhaka-university-b-unit-admission-course-thumbnail.jpg?w=351&h=198",
+      "title": "ঢাকা ভার্সিটি B Unit এডমিশন কোর্স - ২০২৪",
+      "instructor": "Farhan Sakib +9",
+      "href": "/"
+    },
+    {
+      "imgUrl": "https://cdn.10minuteschool.com/images/thumbnails/dhaka-university-c-unit-admission-course-thumbnail.jpg?w=351&h=198",
+      "title": "ঢাকা ভার্সিটি C Unit এডমিশন কোর্স - ২০২৪",
+      "instructor": "Farhan Sakib +11",
+      "href": "/"
+    }
+  ],
+  "jobCourses": [
+    {
+      "imgUrl": "https://cdn.10minuteschool.com/images/thumbnails/BCS_Preli_Recorded_Course_Thumbnail.jpg?w=351&h=198",
+      "title": "বিসিএস প্রিলি রেকর্ডেড কোর্স",
+      "instructor": "Farhan Sakib +20",
+      "href": ""
+    },
+    {
+      "imgUrl": "https://cdn.10minuteschool.com/images/skills/Updated_Thumbnail_v3/BankJ.jpg?w=351&h=198",
+      "title": "ব্যাংক জবস কোর্স",
+      "instructor": "Akif Masumi +8",
+      "href": ""
+    },
+    {
+      "imgUrl": "https://cdn.10minuteschool.com/images/skills/Updated_Thumbnail_v3/shorkari_chakri_prostuti_rac.jpg?w=351&h=198",
+      "title": "সরকারি চাকরি প্রস্তুতি বেসিক কোর্স",
+      "instructor": "Akif Masumi +10",
+      "href": ""
+    },
+    {
+      "imgUrl": "https://cdn.10minuteschool.com/images/thumbnails/english-for-govt-jobs-16x9-updated.jpg?w=351&h=198",
+      "title": "English for Govt. Jobs",
+      "instructor": "Shahnawaz Hossain Jay",
+      "href": ""
+    },
+    {
+      "imgUrl": "https://cdn.10minuteschool.com/images/thumbnails/gk-course-for-govt-jobs-thumbnail.jpg?w=351&h=198",
+      "title": "GK for Govt. Jobs",
+      "instructor": "আব্দুর রহমান শ্রাবণ",
+      "href": ""
+    },
+    {
+      "imgUrl": "https://cdn.10minuteschool.com/images/thumbnails/PATR23/PATR_updated_thumbnail_May_2023.jpg?w=351&h=198",
+      "title": "প্রাথমিক সহকারী শিক্ষক নিয়োগ পরীক্ষা কোর্স - ২০২৩",
+      "instructor": "Farhan Sakib +3",
+      "href": ""
+    },
+    {
+      "imgUrl": "https://cdn.10minuteschool.com/images/skills/Updated_Thumbnail_v3/bcs_qs_thumbnail.jpg?w=351&h=198",
+      "title": "বিসিএস প্রশ্ন সমাধান",
+      "instructor": "Akif Masumi +3",
+      "href": ""
+    },
+    {
+      "imgUrl": "https://cdn.10minuteschool.com/images/thumbnails/bank_jobs_question_solve_course_model_test.jpg?w=351&h=198",
+      "title": "ব্যাংক জবস প্রশ্ন সমাধান + মডেল টেস্ট কোর্স",
+      "instructor": "Akif Masumi +2",
+      "href": ""
+    },
+    {
+      "imgUrl": "https://cdn.10minuteschool.com/images/thumbnails/ministry-jobs-question-solve-model-test-thumbnail.jpg?w=351&h=198",
+      "title": "মিনিস্ট্রি জবস প্রশ্ন সমাধান + মডেল টেস্ট কোর্স",
+      "instructor": "Akif Masumi +4",
+      "href": ""
+    },
+    {
+      "imgUrl": "https://cdn.10minuteschool.com/images/skills/Updated_Thumbnail_v3/BCS_preli.jpg?w=351&h=198",
+      "title": "বিসিএস প্রিলি মডেল টেস্ট",
+      "instructor": "সামিউর রহমান +5",
+      "href": ""
+    }
+  ],
+  "testimonials": [
+    {
+      "testimonial": "কোর্সটির প্রতিটি সেকশনে ছিল স্পষ্ট নির্দেশনা । বিশেষ করে, “Reading” এবং “Writing” সেকশন এতটাই informative ছিল যা আমার জন্য Mock Test এবং Real Exam কে সহজ করে তুলেছিল। আমার সবচেয়ে ভালো লেগেছে “Writing Part”.",
+      "name": "Tahiya Faiza",
+      "profession": "Teaching Assistant, Brac University"
+    },
+    {
+      "testimonial": "অফলাইনে শেখার মত সময় হয়ে উঠছিল না তাই অনলাইন কোর্স কে বেছে নেওয়া । কোর্সটিতে খুব সুন্দর করে হরফ তানভীন মাদ পড়ানো হয়েছে । খুব সহজেই প্রতিদিন প্র্যাকটিস করে খুব দ্রুত শুদ্ধ তেলাওয়াত আয়ত্ত করতে পেরেছি।",
+      "name": "Zakirul Islam",
+      "profession": "Businessman"
+    },
+    {
+      "testimonial": "আমার একটি অনলাইন পেজ ছিল কিন্তু পেইজটিকে নিয়ে কিভাবে সামনে আগাবে কোন কিছু বুঝতে পারছিলাম না । কোর্সটি করার মাধ্যমে কিভাবে একটি বেসিক পোস্ট দিবো কিভাবে ইউজ করব কিভাবে কন্টাক্ট করবো শিখতে পেরেছি।",
+      "name": "Hasibur Rahman",
+      "profession": "Online Business Owner"
+    },
+    {
+      "testimonial": "টেন মিনিট স্কুলের অনলাইন ব্যাচে ইংরেজি ক্লাস করার পর ইংরেজি বিষয়ে আমি ৯০+ মার্কস পেয়েছি। এছাড়াও টেন মিনিট স্কুলের লাইভ চ্যাট, পোল এবং লিডারবোর্ড ফিচারটি চমৎকার যা আমাদের প্রতিনিয়ত পড়াশোনার আগ্রহ বাড়াতে সাহায্য করেছে।",
+      "name": "Mushfik Jaman",
+      "profession": "Class 8, Bedkashi Collegiate School, Khulna"
+    },
+    {
+      "testimonial": "অনলাইন ব্যাচের ক্লাসের সবচেয়ে চমৎকার বিষয় হলো ক্লাসে পড়ানোর টেকনিক। প্রত্যেকটি শিক্ষক এত যত্ন করে ক্লাসগুলো করান যে আমার বাচ্চা ক্লাসগুলো খুব এঞ্জয় করে। পড়াশোনা এমন মজারই হওয়া দরকার! এছাড়া, মান্থলি এক্সাম, লেকচার শীট গুলো ও খুবই মানসম্মত।",
+      "name": "Miftahul Jannat",
+      "profession": "Class 7"
+    }
+  ],
+  "stats": [
+    {
+      "number": 15548,
+      "label": "মোট শিক্ষার্থী"
+    },
+    {
+      "number": 1400,
+      "label": "চান্সপ্রাপ্ত শিক্ষার্থী"
+    },
+    {
+      "number": 34,
+      "label": "টপ ১০০-তে চান্সপ্রাপ্ত শিক্ষার্থী"
+    }
+  ]
+}

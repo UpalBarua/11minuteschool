@@ -1,17 +1,5 @@
-const stats = [
-  {
-    number: "১৫,৫৪৮",
-    label: "মোট শিক্ষার্থী",
-  },
-  {
-    number: "১,৪০০+",
-    label: "চান্সপ্রাপ্ত শিক্ষার্থী",
-  },
-  {
-    number: "৩৪",
-    label: "টপ ১০০-তে চান্সপ্রাপ্ত শিক্ষার্থী",
-  },
-] as const;
+import data from "@/data/data.json";
+import { CountUp } from "./count-up";
 
 export function Stats() {
   return (
@@ -34,14 +22,12 @@ export function Stats() {
         </p>
       </div>
       <div className="grid grid-cols-2 gap-4 px-4 py-7 md:grid-cols-3 md:gap-12">
-        {stats.map(({ label, number }) => (
+        {data.stats.map(({ label, number }) => (
           <div
             className="border-1 col-span-1 flex flex-col items-center justify-center rounded-xl border-white border-opacity-0 bg-[#00000042] p-4 py-2 text-white md:py-8"
             key={label}
           >
-            <h2 className="count text-2xl font-semibold md:mb-[14px] md:text-[56px] md:leading-[44px]">
-              <span>{number}</span>
-            </h2>
+            <CountUp number={number} />
             <p className="text-sm font-medium leading-[30px] md:text-xl">
               {label}
             </p>

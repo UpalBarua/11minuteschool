@@ -1,5 +1,6 @@
 import NextAuth from "next-auth";
 import Credentials from "next-auth/providers/credentials";
+import api from "./data/api";
 
 export const { handlers, signIn, signOut, auth } = NextAuth({
   providers: [
@@ -10,7 +11,7 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
       },
       async authorize(credentials) {
         try {
-          const res = await fetch("http://localhost:8080/api/users/login", {
+          const res = await fetch(`${api}/users/login`, {
             method: "POST",
             headers: {
               "Content-Type": "application/json",

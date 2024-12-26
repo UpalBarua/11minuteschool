@@ -5,82 +5,11 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import data from "@/data/data.json";
 import { ArrowRightIcon, ChevronRightIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { buttonVariants } from "./ui/button";
-
-const courses = [
-  {
-    imgUrl:
-      "https://cdn.10minuteschool.com/images/thumbnails/medical-final-exam-batch-2024-thumbnail-new.jpg?w=351&h=198",
-    title: "মেডিকেল ফাইনাল এক্সাম ব্যাচ ২০২৪",
-    instructor: "Dr Sushmita Biswas +1",
-    href: "/",
-  },
-  {
-    imgUrl: "https://cdn.10minuteschool.com/images/du_a_qs_up2.jpg?w=351&h=198",
-    title: "ঢাবি-ক কোশ্চেন সলভ কোর্স",
-    instructor: "CM Rezaul Karim +7",
-    href: "/",
-  },
-  {
-    imgUrl:
-      "https://cdn.10minuteschool.com/images/k-12-courses/adm_medicalqs_v4.jpeg?w=351&h=198",
-    title: "Medical Admission Question Solve Course",
-    instructor: "Sharif Alam +9",
-    href: "/",
-  },
-  {
-    imgUrl:
-      "https://cdn.10minuteschool.com/images/thumbnails/gst-b-unit-admission-course-thumbnail.jpg?w=351&h=198",
-    title: "গুচ্ছ B Unit এডমিশন কোর্স - ২০২৪",
-    instructor: "Farhan Sakib +9",
-    href: "/",
-  },
-  {
-    imgUrl:
-      "https://cdn.10minuteschool.com/images/thumbnails/gst-c-unit-admission-course-thumbnail.jpg?w=351&h=198",
-    title: "গুচ্ছ C Unit এডমিশন কোর্স - ২০২৪",
-    instructor: "Farhan Sakib +6",
-    href: "/",
-  },
-  {
-    imgUrl:
-      "https://cdn.10minuteschool.com/images/thumbnails/gst-a-unit-admission-course-thumbnail.jpg?w=351&h=198",
-    title: "গুচ্ছ A Unit এডমিশন কোর্স - ২০২৪",
-    instructor: "Farhan Sakib +13",
-    href: "/",
-  },
-  {
-    imgUrl:
-      "https://cdn.10minuteschool.com/images/thumbnails/du-written-private-batch-bangla-and-english-thumbnail.jpg?w=351&h=198",
-    title: "DU Written (Bangla & English) Private Batch",
-    instructor: "Farhan Sakib +4",
-    href: "/",
-  },
-  {
-    imgUrl:
-      "https://cdn.10minuteschool.com/images/thumbnails/Admission_2024/medical-admission-2024-course-thumbnail.jpg?w=351&h=198",
-    title: "মেডিকেল এডমিশন কোর্স - ২০২৪",
-    instructor: "Dr Sushmita Biswas +1",
-    href: "/",
-  },
-  {
-    imgUrl:
-      "https://cdn.10minuteschool.com/images/thumbnails/dhaka-university-b-unit-admission-course-thumbnail.jpg?w=351&h=198",
-    title: "ঢাকা ভার্সিটি B Unit এডমিশন কোর্স - ২০২৪",
-    instructor: "Farhan Sakib +9",
-    href: "/",
-  },
-  {
-    imgUrl:
-      "https://cdn.10minuteschool.com/images/thumbnails/dhaka-university-c-unit-admission-course-thumbnail.jpg?w=351&h=198",
-    title: "ঢাকা ভার্সিটি C Unit এডমিশন কোর্স - ২০২৪",
-    instructor: "Farhan Sakib +11",
-    href: "/",
-  },
-] as const;
 
 export function AdmissionTest() {
   return (
@@ -99,37 +28,39 @@ export function AdmissionTest() {
       </div>
       <Carousel className="mb-4 w-full max-w-full md:mb-6">
         <CarouselContent>
-          {courses.map(({ title, imgUrl, instructor, href }) => (
-            <CarouselItem
-              className="py-2 sm:basis-1/2 md:basis-1/3 lg:basis-1/4"
-              key={title}
-            >
-              <Link
-                href={href}
-                className="block h-full overflow-clip rounded-lg border border-[#E5E7EB] bg-white transition-colors hover:border-green-600"
+          {data.admissionTestCourses.map(
+            ({ title, imgUrl, instructor, href }) => (
+              <CarouselItem
+                className="py-2 sm:basis-1/2 md:basis-1/3 lg:basis-1/4"
+                key={title}
               >
-                <Image
-                  className="w-full"
-                  src={imgUrl}
-                  alt={title}
-                  width={351}
-                  height={198}
-                />
-                <div className="flex min-h-[118px] min-w-0 flex-1 flex-col justify-between p-[14px] md:min-h-[145px]">
-                  <h3 className="mb-1 line-clamp-2 h-14 text-sm font-semibold md:text-lg">
-                    মেডিকেল ফাইনাল এক্সাম ব্যাচ ২০২৪
-                  </h3>
-                  <p className="max-h-[50px] overflow-hidden truncate text-xs text-[#6B7280] md:text-sm">
-                    {instructor}
-                  </p>
-                  <span className="mt-4 flex items-center gap-x-1 text-xs font-semibold text-green-600 underline-offset-2 hover:underline md:text-sm md:font-medium">
-                    বিস্তারিত
-                    <ArrowRightIcon className="size-4" />
-                  </span>
-                </div>
-              </Link>
-            </CarouselItem>
-          ))}
+                <Link
+                  href={href}
+                  className="block h-full overflow-clip rounded-lg border border-[#E5E7EB] bg-white transition-colors hover:border-green-600"
+                >
+                  <Image
+                    className="w-full"
+                    src={imgUrl}
+                    alt={title}
+                    width={351}
+                    height={198}
+                  />
+                  <div className="flex min-h-[118px] min-w-0 flex-1 flex-col justify-between p-[14px] md:min-h-[145px]">
+                    <h3 className="mb-1 line-clamp-2 h-14 text-sm font-semibold md:text-lg">
+                      মেডিকেল ফাইনাল এক্সাম ব্যাচ ২০২৪
+                    </h3>
+                    <p className="max-h-[50px] overflow-hidden truncate text-xs text-[#6B7280] md:text-sm">
+                      {instructor}
+                    </p>
+                    <span className="mt-4 flex items-center gap-x-1 text-xs font-semibold text-green-600 underline-offset-2 hover:underline md:text-sm md:font-medium">
+                      বিস্তারিত
+                      <ArrowRightIcon className="size-4" />
+                    </span>
+                  </div>
+                </Link>
+              </CarouselItem>
+            ),
+          )}
         </CarouselContent>
         <CarouselPrevious className="size-8 translate-x-[2rem] border-0 bg-foreground/60 transition-colors hover:bg-foreground/70" />
         <CarouselNext className="hover:bg-white/bg-foreground/70 size-8 -translate-x-[2rem] border-0 bg-foreground/60 transition-colors" />

@@ -1,24 +1,6 @@
 import { LearnMore } from "@/components/ui/learn-more";
 import Image from "next/image";
-
-const academicCourses = [
-  {
-    label: "ক্লাস ৬,৭,৮",
-    icon: "https://cdn.10minuteschool.com/images/image_6344663_1733036653015.png?w=65&h=65",
-  },
-  {
-    label: "ক্লাস ৯, ১০ ",
-    icon: "https://cdn.10minuteschool.com/images/9-10_1732778140427.png?w=65&h=65",
-  },
-  {
-    label: "SSC ২৫",
-    icon: "https://cdn.10minuteschool.com/images/ssc_1732778162589.png?w=65&h=65",
-  },
-  {
-    label: "HSC ২৫, ২৬",
-    icon: "https://cdn.10minuteschool.com/images/hscbag_1732778180651.png?w=65&h=65",
-  },
-] as const;
+import data from "@/data/data.json";
 
 export function AcademicCourses() {
   return (
@@ -30,7 +12,7 @@ export function AcademicCourses() {
         অনলাইন ব্যাচ ২০২৫ এর সকল কোর্সে ভর্তি চলছে!
       </p>
       <ul className="no-scrollbar flex max-w-full items-center gap-2 overflow-x-auto md:gap-4">
-        {academicCourses.map(({ icon, label }, i) => (
+        {data.academicCourses.map(({ icon, label }, i) => (
           <li
             key={i + icon}
             className="flex size-full min-w-28 cursor-pointer flex-col items-center justify-center rounded-2xl bg-background/10 px-2 py-5 text-background backdrop-blur-md transition-all duration-300"

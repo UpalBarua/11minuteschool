@@ -1,32 +1,12 @@
+"use client";
+
+import data from "@/data/data.json";
 import { ChevronRightIcon } from "lucide-react";
-import Image from "next/image";
 import Link from "next/link";
+import LiteYouTubeEmbed from "react-lite-youtube-embed";
+import "react-lite-youtube-embed/dist/LiteYouTubeEmbed.css";
 
 import { buttonVariants } from "@/components/ui/button";
-
-const offerings = [
-  {
-    imgUrl:
-      "https://cdn.10minuteschool.com/images/thumbnail_course_trailer_1711009830914.jpg?w=867&h=480",
-    title: "সব বিষয়ের প্রতি অধ্যায়েই হবে ইচ্ছেমত অনুশীলন",
-    description:
-      "অনলাইন ব্যাচের লাইব্রেরীতে থাকছে সব বিষয়ের অধ্যায়-ভিত্তিক প্রশ্ন অনুশীলনের সুযোগ।",
-  },
-  {
-    imgUrl:
-      "https://cdn.10minuteschool.com/images/thumbnail_english_live_class_1711009865931.jpg?w=867&h=480",
-    title: "যতই হোক প্রশ্ন, ক্লাসেই সব সমাধান!",
-    description:
-      "লাইভ ক্লাসে থাকবে ২ জন শিক্ষক! একজন পড়াবেন, আরেকজন চ্যাটে শিক্ষার্থীদের প্রশ্নের উত্তর দিবেন।",
-  },
-  {
-    imgUrl:
-      "https://cdn.10minuteschool.com/images/thumbnail-ob-trailer_1711002882957.jpg?w=867&h=480",
-    title: "সব বিষয়ের প্রতি অধ্যায়েই হবে ইচ্ছেমত অনুশীলন",
-    description:
-      "অনলাইন ব্যাচের লাইব্রেরীতে থাকছে সব বিষয়ের অধ্যায়-ভিত্তিক প্রশ্ন অনুশীলনের সুযোগ।",
-  },
-] as const;
 
 const icon = (
   <svg
@@ -95,23 +75,10 @@ export function Offerings() {
         </p>
       </div>
       <ul className="grid grid-cols-1 gap-4 md:grid-cols-3">
-        {offerings.map(({ imgUrl, title, description }) => (
-          <li className="rounded-md border p-4" key={imgUrl}>
+        {data.offerings.map(({ videoId, title, description }) => (
+          <li className="rounded-md border p-4" key={title}>
             <div className="relative mb-6 aspect-video w-full overflow-hidden rounded-md">
-              <Image
-                className="absolute left-1/2 top-1/2 z-[2] -translate-x-1/2 -translate-y-1/2 cursor-pointer"
-                src="https://10minuteschool.com/images/annual_exam/play_icon_2.svg?w=100&h=100"
-                alt="Play The  Video"
-                width={100}
-                height={100}
-              />
-              <Image
-                className="w-full"
-                src={imgUrl}
-                alt="image"
-                width={867}
-                height={480}
-              />
+              <LiteYouTubeEmbed id={videoId} title={title} />
             </div>
             <h3 className="pb-2 text-xl font-semibold">{title}</h3>
             <p className="text-sm font-normal text-muted-foreground md:text-base">
