@@ -17,14 +17,14 @@ export function NavMenu() {
         !!links?.length ? (
           <div key={label}>
             <DropdownMenu>
-              <DropdownMenuTrigger className="hover:text-green flex cursor-pointer items-center justify-center gap-0.5 text-sm font-medium text-[#4B5563]">
+              <DropdownMenuTrigger className="flex cursor-pointer items-center justify-center gap-0.5 text-sm font-medium outline-0 hover:text-green-500">
                 <span>{label}</span>
                 <ChevronDownIcon className="size-5 shrink-0 text-muted-foreground transition-transform duration-200 group-hover:text-green-500" />
               </DropdownMenuTrigger>
               <DropdownMenuContent className="z-[999]">
                 {links.map(({ label, icon }) => (
                   <DropdownMenuItem
-                    className="flex cursor-pointer items-center gap-x-2 rounded px-4 py-3 text-base font-medium text-[#4B5563] outline-0 hover:bg-gray-100"
+                    className="flex cursor-pointer items-center gap-x-2 rounded px-4 py-3 text-base font-medium outline-0 hover:bg-gray-100"
                     key={label}
                   >
                     {icon}
@@ -36,7 +36,7 @@ export function NavMenu() {
           </div>
         ) : (
           <div
-            className="hover:text-green flex cursor-pointer items-center justify-center gap-0.5 text-sm font-medium text-[#4B5563]"
+            className="hover:text-green flex cursor-pointer items-center justify-center gap-0.5 text-sm font-medium text-foreground"
             key={label}
           >
             {label}

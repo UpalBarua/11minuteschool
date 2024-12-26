@@ -66,10 +66,10 @@ export function Offerings() {
           {icon}
           <span>ক্লাস ৬-১০</span>
         </h2>
-        <p className="mb-2 text-2xl font-semibold leading-[32px] text-[#111827] md:mb-4 md:text-[44px] md:leading-[56px]">
+        <p className="mb-2 text-2xl font-semibold leading-[32px] md:mb-4 md:text-[44px] md:leading-[56px]">
           বছর জুড়ে অনলাইন ব্যাচে কী কী থাকছে?
         </p>
-        <p className="mb-7 text-sm font-normal leading-[22px] text-[#4B5563] md:mb-4 md:text-lg md:leading-7 md:tracking-normal">
+        <p className="mb-7 text-sm font-normal leading-[22px] text-muted-foreground md:mb-4 md:text-lg md:leading-7 md:tracking-normal">
           সেরা শিক্ষকদের পরিচর্যায় দেশের যেকোন প্রান্ত থেকে অব্যাহত থাকুক
           পড়াশুনার অগ্রযাত্রা{" "}
         </p>

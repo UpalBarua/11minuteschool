@@ -38,7 +38,7 @@ export function Search() {
             ref={searchInputRef}
           />
           <Image
-            className="absolute left-0 top-1/2 ms-4 size-7 -translate-y-1/2 text-muted-foreground"
+            className="absolute left-0 top-1/2 ms-4 size-7 -translate-y-1/2 text-muted-foreground dark:invert"
             src="/icons/icon-search.svg"
             alt="search icon"
             height={50}
@@ -87,7 +87,7 @@ export function Search() {
       </form>
       <div
         className={cn(
-          "fixed inset-0 top-16 hidden bg-foreground/50",
+          "fixed inset-0 top-16 hidden bg-black/50",
           isSearchOpen && "block",
         )}
         onClick={() => setIsSearchOpen(false)}

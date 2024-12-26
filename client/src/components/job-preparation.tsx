@@ -44,16 +44,16 @@ const icon = (
 
 export function JobPreparation() {
   return (
-    <div className="full-width grid-container mb-10 bg-white py-8 md:mb-0 md:py-[120px]">
+    <div className="full-width grid-container mb-10 bg-white py-8 dark:bg-background md:mb-0 md:py-[120px]">
       <div className="mx-auto mb-10 px-4 text-center">
         <h2 className="flex items-center justify-center gap-2 pb-3 text-sm font-medium text-[#4355f3] md:pb-6 md:text-lg">
           {icon}
           <span>চাকরি প্রস্তুতি</span>
         </h2>
-        <p className="mb-2 text-2xl font-semibold leading-[32px] text-[#111827] md:mb-4 md:text-[44px] md:leading-[56px]">
+        <p className="mb-2 text-2xl font-semibold leading-[32px] text-[#111827] dark:text-foreground md:mb-4 md:text-[44px] md:leading-[56px]">
           সরকারি চাকরির সর্বোচ্চ প্রস্তুতি
         </p>
-        <p className="mb-7 text-sm font-normal leading-[22px] text-[#4B5563] md:mb-4 md:text-lg md:leading-7 md:tracking-normal">
+        <p className="mb-7 text-sm font-normal leading-[22px] text-[#4B5563] dark:text-muted-foreground md:mb-4 md:text-lg md:leading-7 md:tracking-normal">
           বিসিএস কিংবা ব্যাংকে চাকরি - টার্গেট যেটাই হোক, সলিউশন এখানেই!
         </p>
       </div>
@@ -65,7 +65,7 @@ export function JobPreparation() {
               key={title}
             >
               <Link
-                className="block h-full overflow-clip rounded-lg border border-[#E5E7EB] bg-white transition-colors hover:border-green-600"
+                className="block h-full overflow-clip rounded-lg border border-[#E5E7EB] bg-white transition-colors hover:border-green-600 dark:border-foreground/20 dark:bg-background"
                 href={href}
               >
                 <Image
