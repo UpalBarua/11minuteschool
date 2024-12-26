@@ -47,23 +47,23 @@ const icon = (
 
 export function SscAndHsc() {
   return (
-    <MotionDiv
-      initial={{
-        y: 100,
-        opacity: 0,
-      }}
-      whileInView={{
-        y: 0,
-        opacity: 1,
-      }}
-      transition={{
-        duration: 0.75,
-      }}
-      viewport={{
-        once: true,
-      }}
-    >
-      <section className="full-width grid-container justify-items-center bg-[#F4F7FD] py-8 dark:bg-[#111827] md:py-32">
+    <section className="full-width grid-container justify-items-center bg-[#F4F7FD] py-8 dark:bg-[#111827] md:py-32">
+      <MotionDiv
+        initial={{
+          y: 100,
+          opacity: 0,
+        }}
+        whileInView={{
+          y: 0,
+          opacity: 1,
+        }}
+        transition={{
+          duration: 0.75,
+        }}
+        viewport={{
+          once: true,
+        }}
+      >
         <div className="mx-w-[80ch] mx-auto mb-10 px-4 text-center">
           <h2 className="flex items-center justify-center gap-2 pb-3 text-sm font-medium text-[#183CAF] md:pb-6 md:text-lg">
             {icon}
@@ -94,7 +94,7 @@ export function SscAndHsc() {
             ))}
           </div>
         </div>
-      </section>
-    </MotionDiv>
+      </MotionDiv>
+    </section>
   );
 }

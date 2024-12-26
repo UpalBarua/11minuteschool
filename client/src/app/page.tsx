@@ -1,14 +1,13 @@
 import { AdmissionTest } from "@/components/admission-test";
-import { MotionDiv } from "@/components/motion-div";
+import { App } from "@/components/app";
 import { Banner } from "@/components/banner";
 import { JobPreparation } from "@/components/job-preparation";
 import { Offerings } from "@/components/offerings";
+import { Resources } from "@/components/resources";
 import { Skills } from "@/components/skills";
 import { SscAndHsc } from "@/components/ssc-and-hsc";
-import { Testimonials } from "@/components/testimonials";
-import { Resources } from "@/components/resources";
 import { Stats } from "@/components/stats";
-import { App } from "@/components/app";
+import { Testimonials } from "@/components/testimonials";
 
 export default function HomePage() {
   return (
