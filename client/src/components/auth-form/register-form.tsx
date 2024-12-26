@@ -73,6 +73,7 @@ export function RegisterForm({ email }: RegisterFormProps) {
         });
 
         router.push("/");
+        router.refresh();
       } catch {
         toast.error("Something went wrong!");
       }

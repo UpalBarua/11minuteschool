@@ -46,12 +46,18 @@ export function LoginForm({ email }: LoginFormProps) {
   function onSubmit({ password }: TLoginFormSchema) {
     startTransition(async () => {
       try {
-        await signIn("credentials", {
+        const response = await signIn("credentials", {
           email,
           password,
           redirect: false,
         });
+
+        if (response?.error === "CredentialsSignin") {
+          toast.error("Wrong credentials");
+        }
+
         router.push("/");
+        router.refresh();
       } catch {
         toast.error("Something went wrong");
       }
