@@ -353,14 +353,10 @@ export function Brands() {
         দেশের সেরা প্রতিষ্ঠানগুলো নিচ্ছে আমাদের কর্পোরেট স্কিলস ডেভেলপমেন্ট
         প্রোগ্রাম
       </p>
-      <div className="scrollbar-hide mb-4 overflow-x-auto">
+      <div className="no-scrollbar mb-4 overflow-x-auto">
         <div className="flex min-w-[800px] flex-nowrap justify-between opacity-30">
           {brands.map((brand, i) => {
-            return (
-              <>
-                <div key={i * 67}>{brand}</div>
-              </>
-            );
+            return <div key={i * 67}>{brand}</div>;
           })}
         </div>
       </div>

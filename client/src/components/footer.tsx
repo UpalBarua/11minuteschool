@@ -1,5 +1,5 @@
-import Link from "next/link";
 import Image from "next/image";
+import Link from "next/link";
 
 export function Footer() {
   return (
@@ -63,20 +63,20 @@ export function Footer() {
               </h3>
               <ul className="mb-4 flex flex-col justify-center text-gray-600 md:mb-0 md:justify-start md:gap-4">
                 <li>
-                  <a
+                  <Link
                     href="https://app.10minuteschool.com/careers"
                     className="hover:text-green mb-2 text-sm font-medium md:text-base"
                   >
                     ক্যারিয়ার / নিয়োগ বিজ্ঞপ্তি
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     href="https://docs.google.com/forms/d/e/1FAIpQLScWh9jjyWnUKdDKET1-LHvdTxuU6-ssd0GLTI-0JlQ2MH6RzA/viewform"
                     className="hover:text-green mb-2 text-sm font-medium md:text-base"
                   >
                     শিক্ষক হিসাবে যোগ দিন
-                  </a>
+                  </Link>
                 </li>
                 <li>
                   <a
@@ -87,28 +87,28 @@ export function Footer() {
                   </a>
                 </li>
                 <li>
-                  <a
+                  <Link
                     href="https://app.10minuteschool.com/privacy-policy"
                     className="hover:text-green mb-2 text-sm font-medium md:text-base"
                   >
                     প্রাইভেসি পলিসি
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     href="https://app.10minuteschool.com/refund-policy"
                     className="hover:text-green mb-2 text-sm font-medium md:text-base"
                   >
                     রিফান্ড পলিসি
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     href="https://app.10minuteschool.com/terms-and-conditions"
                     className="hover:text-green mb-2 text-sm font-medium md:text-base"
                   >
                     ব্যবহারকারীর শর্তাবলি
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -118,52 +118,52 @@ export function Footer() {
               </h3>
               <ul className="mb-4 flex flex-col justify-center text-gray-600 md:mb-0 md:justify-start md:gap-4">
                 <li>
-                  <a
+                  <Link
                     href="https://blog.10minuteschool.com/"
                     className="hover:text-green mb-2 text-sm font-medium md:text-base"
                   >
                     ব্লগ
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     href="/store/all"
                     className="hover:text-green mb-2 text-sm font-medium md:text-base"
                   >
                     বুক স্টোর
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     href="https://10minuteschool.com/content"
                     className="hover:text-green mb-2 text-sm font-medium md:text-base"
                   >
                     ফ্রি নোটস ও গাইড
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     href="/jobs-prep"
                     className="hover:text-green mb-2 text-sm font-medium md:text-base"
                   >
                     চাকরি প্রস্তুতি কোর্সসমূহ
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     href="/certificate"
                     className="hover:text-green mb-2 text-sm font-medium md:text-base"
                   >
                     সার্টিফিকেট ভেরিফাই করুন
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     href="/resource"
                     className="hover:text-green mb-2 text-sm font-medium md:text-base"
                   >
                     ফ্রি ডাউনলোড
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -177,30 +177,30 @@ export function Footer() {
             <p className="mb-4 text-base font-normal">
               কল করুন{/* */}:{/* */}{" "}
               <span>
-                <a className="text-green" href="tel:16910">
+                <Link className="text-green" href="tel:16910">
                   16910
-                </a>{" "}
+                </Link>{" "}
                 {/* */}(24x7)
               </span>
             </p>
             <p className="mb-4 text-base font-normal">
               হোয়াটসঅ্যাপ{/* */}:{/* */}{" "}
               <span>
-                <a
+                <Link
                   className="text-green"
                   href="https://api.whatsapp.com/send?phone=+8801896016252&text=I need your assistance"
                 >
                   +8801896016252
-                </a>
+                </Link>
                 (24x7)
               </span>
             </p>
             <p className="mb-4 text-base font-normal">
               দেশের বাহির থেকে{/* */}:{/* */}{" "}
               <span>
-                <a className="text-green" href="tel:+8809610916910">
+                <Link className="text-green" href="tel:+8809610916910">
                   +880 9610916910
-                </a>
+                </Link>
               </span>
             </p>
             <p className="mb-2 text-base font-normal">
@@ -210,7 +210,7 @@ export function Footer() {
           </div>
           <div className="mx-auto mb-3 mt-5 flex w-full max-w-[256px] gap-6 md:mx-0">
             <div>
-              <a
+              <Link
                 href="https://www.facebook.com/10minuteschool/"
                 target="_blank"
                 rel="noreferrer"
@@ -219,24 +219,17 @@ export function Footer() {
                   className="undefined opacity-0 transition-opacity duration-300 ease-in-out"
                   style={{ fontSize: 0, opacity: 1 }}
                 >
-                  <img
+                  <Image
                     alt="facebook"
-                    data-original-src="https://cdn.10minuteschool.com/images/facebook_1695730910971.png"
-                    draggable="false"
-                    loading="lazy"
                     width={32}
                     height={32}
-                    decoding="async"
-                    data-nimg={1}
-                    className=""
-                    style={{ color: "transparent" }}
                     src="https://cdn.10minuteschool.com/images/facebook_1695730910971.png?w=32&h=32"
                   />
                 </div>
-              </a>
+              </Link>
             </div>
             <div>
-              <a
+              <Link
                 href="https://www.instagram.com/10ms_insta/"
                 target="_blank"
                 rel="noreferrer"
@@ -245,24 +238,17 @@ export function Footer() {
                   className="undefined opacity-0 transition-opacity duration-300 ease-in-out"
                   style={{ fontSize: 0, opacity: 1 }}
                 >
-                  <img
+                  <Image
                     alt="instagram"
-                    data-original-src="https://cdn.10minuteschool.com/images/instagram_1695731442397.png"
-                    draggable="false"
-                    loading="lazy"
                     width={32}
                     height={32}
-                    decoding="async"
-                    data-nimg={1}
-                    className=""
-                    style={{ color: "transparent" }}
                     src="https://cdn.10minuteschool.com/images/instagram_1695731442397.png?w=32&h=32"
                   />
                 </div>
-              </a>
+              </Link>
             </div>
             <div>
-              <a
+              <Link
                 href="https://www.linkedin.com/company/10ms/"
                 target="_blank"
                 rel="noreferrer"
@@ -271,24 +257,17 @@ export function Footer() {
                   className="undefined opacity-0 transition-opacity duration-300 ease-in-out"
                   style={{ fontSize: 0, opacity: 1 }}
                 >
-                  <img
+                  <Image
                     alt="linkedin"
-                    data-original-src="https://cdn.10minuteschool.com/images/linkedin_1695731507042.png"
-                    draggable="false"
-                    loading="lazy"
                     width={32}
                     height={32}
-                    decoding="async"
-                    data-nimg={1}
-                    className=""
-                    style={{ color: "transparent" }}
                     src="https://cdn.10minuteschool.com/images/linkedin_1695731507042.png?w=32&h=32"
                   />
                 </div>
-              </a>
+              </Link>
             </div>
             <div>
-              <a
+              <Link
                 href="https://www.youtube.com/channel/UCL89KKkLs0tZKld-iIS3NGw"
                 target="_blank"
                 rel="noreferrer"
@@ -297,24 +276,17 @@ export function Footer() {
                   className="undefined opacity-0 transition-opacity duration-300 ease-in-out"
                   style={{ fontSize: 0, opacity: 1 }}
                 >
-                  <img
+                  <Image
                     alt="youtube"
-                    data-original-src="https://cdn.10minuteschool.com/images/youtube_1695731538726.png"
-                    draggable="false"
-                    loading="lazy"
                     width={32}
                     height={32}
-                    decoding="async"
-                    data-nimg={1}
-                    className=""
-                    style={{ color: "transparent" }}
                     src="https://cdn.10minuteschool.com/images/youtube_1695731538726.png?w=32&h=32"
                   />
                 </div>
-              </a>
+              </Link>
             </div>
             <div>
-              <a
+              <Link
                 href="https://www.tiktok.com/@10minuteschool?lang=en"
                 target="_blank"
                 rel="noreferrer"
@@ -323,21 +295,14 @@ export function Footer() {
                   className="undefined opacity-0 transition-opacity duration-300 ease-in-out"
                   style={{ fontSize: 0, opacity: 1 }}
                 >
-                  <img
+                  <Image
                     alt="Tiktok"
-                    data-original-src="https://cdn.10minuteschool.com/images/Tiktok_1695731564895.png"
-                    draggable="false"
-                    loading="lazy"
                     width={32}
                     height={32}
-                    decoding="async"
-                    data-nimg={1}
-                    className=""
-                    style={{ color: "transparent" }}
                     src="https://cdn.10minuteschool.com/images/Tiktok_1695731564895.png?w=32&h=32"
                   />
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

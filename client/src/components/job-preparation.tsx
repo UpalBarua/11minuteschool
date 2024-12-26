@@ -91,8 +91,8 @@ export function JobPreparation() {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious className="size-8 translate-x-[2rem] border-0 bg-foreground/60 transition-colors hover:bg-foreground/70" />
-        <CarouselNext className="hover:bg-white/bg-foreground/70 size-8 -translate-x-[2rem] border-0 bg-foreground/60 transition-colors" />
+        <CarouselPrevious className="size-8 translate-x-[3.5rem] border-0 bg-foreground/60 transition-colors hover:bg-foreground/70" />
+        <CarouselNext className="size-8 -translate-x-[3.5rem] border-0 bg-foreground/60 transition-colors hover:bg-foreground/70" />
       </Carousel>
       <Link
         className={buttonVariants({

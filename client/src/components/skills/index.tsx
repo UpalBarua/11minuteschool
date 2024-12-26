@@ -43,7 +43,7 @@ const icon = (
 
 export function Skills() {
   return (
-    <section className="full-width grid-container bg-black py-8 md:py-28">
+    <section className="full-width bg-black py-8 md:py-28">
       <div className="mx-auto max-w-6xl">
         <div className="mb-14 grid justify-items-center text-center text-white">
           <h2 className="flex items-center justify-center gap-2 pb-3 text-sm font-medium md:pb-6 md:text-lg">

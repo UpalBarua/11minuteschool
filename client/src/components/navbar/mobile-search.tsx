@@ -40,7 +40,7 @@ export function MobileSearch() {
       </Button>
       <form
         className={cn(
-          "fixed right-0 top-0 hidden w-full bg-background",
+          "fixed right-0 top-0 hidden h-full w-full bg-background",
           isSearchOpen && "block",
         )}
       >
