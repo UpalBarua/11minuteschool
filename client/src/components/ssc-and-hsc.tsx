@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { MotionDiv } from "./motion-div";
 import Link from "next/link";
 
 import data from "@/data/data.json";
@@ -47,36 +48,53 @@ const icon = (
 export function SscAndHsc() {
   return (
     <section className="full-width grid-container justify-items-center bg-[#F4F7FD] py-8 dark:bg-[#111827] md:py-32">
-      <div className="mx-w-[80ch] mx-auto mb-10 px-4 text-center">
-        <h2 className="flex items-center justify-center gap-2 pb-3 text-sm font-medium text-[#183CAF] md:pb-6 md:text-lg">
-          {icon}
-          <span>SSC &amp; HSC</span>
-        </h2>
-        <h2 className="mb-2 text-2xl font-semibold leading-[32px] md:mb-4 md:text-[44px] md:leading-[56px]">
-          SSC ও HSC শিক্ষার্থীদের জন্য
-        </h2>
-      </div>
-      <div className="max-w-screen-xl overflow-x-auto md:w-3/4 lg:w-full">
-        <div className="justify-start gap-6 md:flex md:flex-nowrap lg:justify-center">
-          {data.sscAndHscCourses.map(({ imgUrl, title, price, href }) => (
-            <Link href={href} key={imgUrl}>
-              <div className="xs:border-dashed my-0 mb-4 flex h-full w-full cursor-pointer flex-row gap-4 rounded-none border-b border-foreground/20 pb-4 transition-colors duration-200 sm:max-w-[200px] sm:flex-col sm:rounded sm:border sm:pb-0 md:min-w-64 md:hover:border-green-500">
-                <div className="w-auto min-w-[100px] max-w-[144px] overflow-hidden rounded sm:max-w-full sm:rounded-b-none">
-                  <Image src={imgUrl} alt={title} width={272} height={152} />
-                </div>
-                <div className="flex min-w-0 flex-1 flex-col justify-between rounded-bl-[4px] rounded-br-[4px] p-0 sm:p-[14px]">
-                  <h2 className="mb-1 line-clamp-2 text-sm font-semibold md:text-lg">
-                    {title}
-                  </h2>
-                  <p className="text-sm font-[600] text-[#1DAB55] md:text-lg">
-                    ৳ {price}
-                  </p>
-                </div>
-              </div>
-            </Link>
-          ))}
+      <MotionDiv
+        initial={{
+          y: 100,
+          opacity: 0,
+        }}
+        whileInView={{
+          y: 0,
+          opacity: 1,
+        }}
+        transition={{
+          duration: 0.75,
+        }}
+        viewport={{
+          once: true,
+        }}
+      >
+        <div className="mx-w-[80ch] mx-auto mb-10 px-4 text-center">
+          <h2 className="flex items-center justify-center gap-2 pb-3 text-sm font-medium text-[#183CAF] md:pb-6 md:text-lg">
+            {icon}
+            <span>SSC &amp; HSC</span>
+          </h2>
+          <h2 className="mb-2 text-2xl font-semibold leading-[32px] md:mb-4 md:text-[44px] md:leading-[56px]">
+            SSC ও HSC শিক্ষার্থীদের জন্য
+          </h2>
         </div>
-      </div>
+        <div className="max-w-screen-xl overflow-x-auto md:w-3/4 lg:w-full">
+          <div className="justify-start gap-6 md:flex md:flex-nowrap lg:justify-center">
+            {data.sscAndHscCourses.map(({ imgUrl, title, price, href }) => (
+              <Link href={href} key={imgUrl}>
+                <div className="xs:border-dashed my-0 mb-4 flex h-full w-full cursor-pointer flex-row gap-4 rounded-none border-b border-foreground/20 pb-4 transition-colors duration-200 sm:max-w-[200px] sm:flex-col sm:rounded sm:border sm:pb-0 md:min-w-64 md:hover:border-green-500">
+                  <div className="w-auto min-w-[100px] max-w-[144px] overflow-hidden rounded sm:max-w-full sm:rounded-b-none">
+                    <Image src={imgUrl} alt={title} width={272} height={152} />
+                  </div>
+                  <div className="flex min-w-0 flex-1 flex-col justify-between rounded-bl-[4px] rounded-br-[4px] p-0 sm:p-[14px]">
+                    <h2 className="mb-1 line-clamp-2 text-sm font-semibold md:text-lg">
+                      {title}
+                    </h2>
+                    <p className="text-sm font-[600] text-[#1DAB55] md:text-lg">
+                      ৳ {price}
+                    </p>
+                  </div>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </MotionDiv>
     </section>
   );
 }

@@ -17,6 +17,7 @@ import { signIn } from "next-auth/react";
 import { useRouter } from "next/navigation";
 import { useTransition } from "react";
 import { useForm } from "react-hook-form";
+import { toast } from "sonner";
 import { z } from "zod";
 
 const registerFormSchema = z
@@ -72,8 +73,8 @@ export function RegisterForm({ email }: RegisterFormProps) {
         });
 
         router.push("/");
-      } catch (error) {
-        console.log(error);
+      } catch {
+        toast.error("Something went wrong!");
       }
     });
   }

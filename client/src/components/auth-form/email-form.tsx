@@ -17,6 +17,7 @@ import {
 import { Input } from "@/components/ui/input";
 import api from "@/data/api";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { toast } from "sonner";
 
 const emailFormSchema = z.object({
   email: z.string().email({ message: "Please provide a valid email address." }),
@@ -55,12 +56,11 @@ export function EmailForm({
 
         if (response.success) {
           setIsEmailRegisteredAction(true);
-          return;
+        } else {
+          setIsEmailRegisteredAction(false);
         }
-
-        setIsEmailRegisteredAction(false);
       } catch {
-        setIsEmailRegisteredAction(false);
+        toast.error("Something went wrong!");
       }
     });
   }

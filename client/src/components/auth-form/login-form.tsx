@@ -18,6 +18,7 @@ import { Input } from "@/components/ui/input";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { signIn } from "next-auth/react";
 import { useRouter } from "next/navigation";
+import { toast } from "sonner";
 
 const loginFormSchema = z.object({
   password: z
@@ -51,8 +52,8 @@ export function LoginForm({ email }: LoginFormProps) {
           redirect: false,
         });
         router.push("/");
-      } catch (error) {
-        console.log(error);
+      } catch {
+        toast.error("Something went wrong");
       }
     });
   }
