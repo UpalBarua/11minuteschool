@@ -17,6 +17,7 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
+import Link from "next/link";
 
 export const navLinks = [
   {
@@ -287,19 +288,67 @@ export const navLinks = [
       },
     ],
   },
-  { label: "স্কিলস" },
-  { label: "ভর্তি পরীক্ষা" },
-  { label: "অনলাইন ব্যাচ" },
-  { label: "ইংলিশ সেন্টার" },
-  { label: "চাকরি প্রস্তুতি কোর্সসমূহ" },
-  { label: "ব্লগ" },
-  { label: "বুক স্টোর" },
-  { label: "ফ্রি নোটস ও গাইড" },
-  { label: "একাডেমিক ডিজিটাল কন্টেন্ট" },
-  { label: "সার্টিফিকেট ভেরিফাই করুন" },
-  { label: "ক্যারিয়ার / নিয়োগ বিজ্ঞপ্তি" },
-  { label: "শিক্ষক হিসাবে যোগ দিন" },
-  { label: "অ্যাফিলিয়েট হিসাবে যোগ দিন" },
+  {
+    label: "স্কিলস",
+    links: [
+      {
+        label: "সকল কোর্সসমূহ",
+        href: "/",
+      },
+      {
+        label: "ভাষা শিক্ষা",
+        href: "/",
+      },
+      {
+        label: "ফ্রিল্যান্সিং",
+        href: "/",
+      },
+      {
+        label: "সকল কোর্সসমূহ",
+        href: "/",
+      },
+      {
+        label: "বান্ডেল",
+        href: "/",
+      },
+      {
+        label: "স্কিলস এন্ড আইটি",
+        href: "/",
+      },
+      {
+        label: "ডিজাইন এন্ড ক্রিয়েটিভ",
+        href: "/",
+      },
+      {
+        label: "ক্যারিয়ার রেডিনেস",
+        href: "/",
+      },
+      {
+        label: "কিডস কোর্সসমূহ",
+        href: "/",
+      },
+      {
+        label: "প্রফেশনাল কোর্সসমূহ",
+        href: "/",
+      },
+      {
+        label: "ফ্রি কোর্সসমূহ",
+        href: "/",
+      },
+    ],
+  },
+  { label: "ভর্তি পরীক্ষা", href: "/" },
+  { label: "অনলাইন ব্যাচ", href: "/" },
+  { label: "ইংলিশ সেন্টার", href: "/" },
+  { label: "চাকরি প্রস্তুতি কোর্সসমূহ", href: "/" },
+  { label: "ব্লগ", href: "/" },
+  { label: "বুক স্টোর", href: "/" },
+  { label: "ফ্রি নোটস ও গাইড", href: "/" },
+  { label: "একাডেমিক ডিজিটাল কন্টেন্ট", href: "/" },
+  { label: "সার্টিফিকেট ভেরিফাই করুন", href: "/" },
+  { label: "ক্যারিয়ার / নিয়োগ বিজ্ঞপ্তি", href: "/" },
+  { label: "শিক্ষক হিসাবে যোগ দিন", href: "/" },
+  { label: "অ্যাফিলিয়েট হিসাবে যোগ দিন", href: "/" },
 ];
 
 export type TNavLink = {
@@ -333,35 +382,37 @@ export function MobileNavMenu() {
       <SheetContent side="top" className="top-16 h-full overflow-y-auto px-2">
         <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
         <ul className="pb-20">
-          {navLinks.map(({ label, links }: TNavLink) =>
+          {navLinks.map(({ label, href, links }: TNavLink, i) =>
             !!links?.length ? (
-              <li key={label}>
+              <li key={label + i}>
                 <Accordion type="multiple" className="w-full">
                   <AccordionItem className="border-0" value="item-1">
                     <AccordionTrigger className="flex cursor-pointer items-center rounded px-4 py-3 text-base font-medium text-[#4B5563] outline-0 hover:bg-gray-100 dark:text-foreground">
                       {label}
                     </AccordionTrigger>
                     <AccordionContent className="ps-2">
-                      {links.map(({ label, icon }) => (
-                        <li
+                      {links.map(({ label, href, icon }, i) => (
+                        <Link
+                          href={href as string}
                           className="flex cursor-pointer items-center gap-x-3 rounded px-4 py-3 text-base font-medium text-[#4B5563] hover:bg-gray-100"
-                          key={label}
+                          key={label + i}
                         >
                           {icon}
                           <span>{label}</span>
-                        </li>
+                        </Link>
                       ))}
                     </AccordionContent>
                   </AccordionItem>
                 </Accordion>
               </li>
             ) : (
-              <li
+              <Link
+                href={href as string}
                 className="flex cursor-pointer items-center rounded px-4 py-3 text-base font-medium text-[#4B5563] hover:bg-gray-100 dark:text-foreground"
-                key={label}
+                key={label + i}
               >
                 {label}
-              </li>
+              </Link>
             ),
           )}
         </ul>

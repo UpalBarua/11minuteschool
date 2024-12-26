@@ -27,7 +27,7 @@ export default function RootLayout({ children }: Readonly<RootLayoutProps>) {
       <body className={cn("antialiased", inter.className)}>
         <ThemeProvider
           attribute="class"
-          defaultTheme="stystem"
+          defaultTheme="light"
           enableSystem
           disableTransitionOnChange
         >
