@@ -13,15 +13,15 @@ import { buttonVariants } from "./ui/button";
 
 export function AdmissionTest() {
   return (
-    <section className="full-width grid-container bg-[#F4F7FD] bg-[url('https://cdn.10minuteschool.com/images/background-admission_1678085094236.png')] bg-left-bottom bg-no-repeat py-8 md:py-[120px]">
+    <section className="full-width grid-container bg-[#F4F7FD] bg-[url('https://cdn.10minuteschool.com/images/background-admission_1678085094236.png')] bg-left-bottom bg-no-repeat py-8 dark:bg-background md:py-[120px]">
       <div className="mx-auto mb-10 px-4 text-center">
         <h2 className="flex items-center justify-center gap-2 pb-3 text-sm font-medium text-[#991efa] md:pb-6 md:text-lg">
           <span>ভর্তি পরীক্ষা</span>
         </h2>
-        <p className="mb-2 text-2xl font-semibold leading-[32px] text-[#111827] md:mb-4 md:text-[44px] md:leading-[56px]">
+        <p className="mb-2 text-2xl font-semibold leading-[32px] text-[#111827] dark:text-foreground md:mb-4 md:text-[44px] md:leading-[56px]">
           স্বপ্নের ভার্সিটির সম্পূর্ণ প্রস্তুতি{" "}
         </p>
-        <p className="md:traccing-normal mb-7 text-sm font-normal leading-[22px] text-[#4B5563] md:mb-4 md:text-lg md:leading-7">
+        <p className="md:traccing-normal mb-7 text-sm font-normal leading-[22px] text-[#4B5563] dark:text-muted-foreground md:mb-4 md:text-lg md:leading-7">
           ইঞ্জিনিয়ারিং-মেডিকেল কিংবা ভার্সিটি-গুচ্ছ - লক্ষ্য যাই হোক, অর্জনের
           পথ এখানেই।
         </p>
@@ -36,7 +36,7 @@ export function AdmissionTest() {
               >
                 <Link
                   href={href}
-                  className="block h-full overflow-clip rounded-lg border border-[#E5E7EB] bg-white transition-colors hover:border-green-600"
+                  className="block h-full overflow-clip rounded-lg border border-[#E5E7EB] bg-white transition-colors hover:border-green-600 dark:border-foreground/20 dark:bg-black"
                 >
                   <Image
                     className="w-full"

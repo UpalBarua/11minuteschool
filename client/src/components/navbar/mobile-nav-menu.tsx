@@ -316,7 +316,7 @@ export function MobileNavMenu() {
     <Sheet open={isMenuOpen} onOpenChange={setIsMenuOpen}>
       <SheetTrigger asChild>
         <Button
-          className="xl:hidden"
+          className="dark:invert xl:hidden"
           size="icon"
           variant="ghost"
           onClick={() => setIsMenuOpen((prev) => !prev)}
@@ -338,7 +338,7 @@ export function MobileNavMenu() {
               <li key={label}>
                 <Accordion type="multiple" className="w-full">
                   <AccordionItem className="border-0" value="item-1">
-                    <AccordionTrigger className="flex cursor-pointer items-center rounded px-4 py-3 text-base font-medium text-[#4B5563] outline-0 hover:bg-gray-100">
+                    <AccordionTrigger className="flex cursor-pointer items-center rounded px-4 py-3 text-base font-medium text-[#4B5563] outline-0 hover:bg-gray-100 dark:text-foreground">
                       {label}
                     </AccordionTrigger>
                     <AccordionContent className="ps-2">
@@ -357,7 +357,7 @@ export function MobileNavMenu() {
               </li>
             ) : (
               <li
-                className="flex cursor-pointer items-center rounded px-4 py-3 text-base font-medium text-[#4B5563] hover:bg-gray-100"
+                className="flex cursor-pointer items-center rounded px-4 py-3 text-base font-medium text-[#4B5563] hover:bg-gray-100 dark:text-foreground"
                 key={label}
               >
                 {label}

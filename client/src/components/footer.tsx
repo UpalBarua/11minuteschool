@@ -16,6 +16,7 @@ export function Footer() {
                 width={116}
                 height={32}
                 src="https://10minuteschool.com/images/logo.svg?w=116&h=32"
+                className="dark:invert"
               />
             </div>
           </Link>
@@ -61,11 +62,11 @@ export function Footer() {
               <h3 className="mb-3 text-base font-semibold md:text-xl md:font-bold">
                 কোম্পানি
               </h3>
-              <ul className="mb-4 flex flex-col justify-center text-gray-600 md:mb-0 md:justify-start md:gap-4">
+              <ul className="mb-4 flex flex-col justify-center text-muted-foreground md:mb-0 md:justify-start md:gap-4">
                 <li>
                   <Link
                     href="https://app.10minuteschool.com/careers"
-                    className="hover:text-green mb-2 text-sm font-medium md:text-base"
+                    className="mb-2 text-sm font-medium hover:text-green-500 md:text-base"
                   >
                     ক্যারিয়ার / নিয়োগ বিজ্ঞপ্তি
                   </Link>
@@ -73,7 +74,7 @@ export function Footer() {
                 <li>
                   <Link
                     href="https://docs.google.com/forms/d/e/1FAIpQLScWh9jjyWnUKdDKET1-LHvdTxuU6-ssd0GLTI-0JlQ2MH6RzA/viewform"
-                    className="hover:text-green mb-2 text-sm font-medium md:text-base"
+                    className="mb-2 text-sm font-medium hover:text-green-500 md:text-base"
                   >
                     শিক্ষক হিসাবে যোগ দিন
                   </Link>
@@ -81,7 +82,7 @@ export function Footer() {
                 <li>
                   <a
                     href="https://affiliation.10minuteschool.com/"
-                    className="hover:text-green mb-2 text-sm font-medium md:text-base"
+                    className="mb-2 text-sm font-medium hover:text-green-500 md:text-base"
                   >
                     অ্যাফিলিয়েট হিসাবে যোগ দিন
                   </a>
@@ -89,7 +90,7 @@ export function Footer() {
                 <li>
                   <Link
                     href="https://app.10minuteschool.com/privacy-policy"
-                    className="hover:text-green mb-2 text-sm font-medium md:text-base"
+                    className="mb-2 text-sm font-medium hover:text-green-500 md:text-base"
                   >
                     প্রাইভেসি পলিসি
                   </Link>
@@ -97,7 +98,7 @@ export function Footer() {
                 <li>
                   <Link
                     href="https://app.10minuteschool.com/refund-policy"
-                    className="hover:text-green mb-2 text-sm font-medium md:text-base"
+                    className="mb-2 text-sm font-medium hover:text-green-500 md:text-base"
                   >
                     রিফান্ড পলিসি
                   </Link>
@@ -105,7 +106,7 @@ export function Footer() {
                 <li>
                   <Link
                     href="https://app.10minuteschool.com/terms-and-conditions"
-                    className="hover:text-green mb-2 text-sm font-medium md:text-base"
+                    className="mb-2 text-sm font-medium hover:text-green-500 md:text-base"
                   >
                     ব্যবহারকারীর শর্তাবলি
                   </Link>
@@ -116,11 +117,11 @@ export function Footer() {
               <h3 className="mb-3 text-base font-semibold md:text-xl md:font-bold">
                 অন্যান্য
               </h3>
-              <ul className="mb-4 flex flex-col justify-center text-gray-600 md:mb-0 md:justify-start md:gap-4">
+              <ul className="mb-4 flex flex-col justify-center text-muted-foreground md:mb-0 md:justify-start md:gap-4">
                 <li>
                   <Link
                     href="https://blog.10minuteschool.com/"
-                    className="hover:text-green mb-2 text-sm font-medium md:text-base"
+                    className="mb-2 text-sm font-medium hover:text-green-500 md:text-base"
                   >
                     ব্লগ
                   </Link>
@@ -128,7 +129,7 @@ export function Footer() {
                 <li>
                   <Link
                     href="/store/all"
-                    className="hover:text-green mb-2 text-sm font-medium md:text-base"
+                    className="mb-2 text-sm font-medium hover:text-green-500 md:text-base"
                   >
                     বুক স্টোর
                   </Link>
@@ -136,7 +137,7 @@ export function Footer() {
                 <li>
                   <Link
                     href="https://10minuteschool.com/content"
-                    className="hover:text-green mb-2 text-sm font-medium md:text-base"
+                    className="mb-2 text-sm font-medium hover:text-green-500 md:text-base"
                   >
                     ফ্রি নোটস ও গাইড
                   </Link>
@@ -144,7 +145,7 @@ export function Footer() {
                 <li>
                   <Link
                     href="/jobs-prep"
-                    className="hover:text-green mb-2 text-sm font-medium md:text-base"
+                    className="mb-2 text-sm font-medium hover:text-green-500 md:text-base"
                   >
                     চাকরি প্রস্তুতি কোর্সসমূহ
                   </Link>
@@ -152,7 +153,7 @@ export function Footer() {
                 <li>
                   <Link
                     href="/certificate"
-                    className="hover:text-green mb-2 text-sm font-medium md:text-base"
+                    className="mb-2 text-sm font-medium hover:text-green-500 md:text-base"
                   >
                     সার্টিফিকেট ভেরিফাই করুন
                   </Link>
@@ -160,7 +161,7 @@ export function Footer() {
                 <li>
                   <Link
                     href="/resource"
-                    className="hover:text-green mb-2 text-sm font-medium md:text-base"
+                    className="mb-2 text-sm font-medium hover:text-green-500 md:text-base"
                   >
                     ফ্রি ডাউনলোড
                   </Link>
@@ -177,7 +178,7 @@ export function Footer() {
             <p className="mb-4 text-base font-normal">
               কল করুন{/* */}:{/* */}{" "}
               <span>
-                <Link className="text-green" href="tel:16910">
+                <Link className="text-green-500" href="tel:16910">
                   16910
                 </Link>{" "}
                 {/* */}(24x7)
@@ -187,7 +188,7 @@ export function Footer() {
               হোয়াটসঅ্যাপ{/* */}:{/* */}{" "}
               <span>
                 <Link
-                  className="text-green"
+                  className="text-green-500"
                   href="https://api.whatsapp.com/send?phone=+8801896016252&text=I need your assistance"
                 >
                   +8801896016252
@@ -198,14 +199,14 @@ export function Footer() {
             <p className="mb-4 text-base font-normal">
               দেশের বাহির থেকে{/* */}:{/* */}{" "}
               <span>
-                <Link className="text-green" href="tel:+8809610916910">
+                <Link className="text-green-500" href="tel:+8809610916910">
                   +880 9610916910
                 </Link>
               </span>
             </p>
             <p className="mb-2 text-base font-normal">
               ইমেইল{/* */}:{/* */}{" "}
-              <span className="text-green">support@10minuteschool.com</span>
+              <span className="text-green-500">support@10minuteschool.com</span>
             </p>
           </div>
           <div className="mx-auto mb-3 mt-5 flex w-full max-w-[256px] gap-6 md:mx-0">
@@ -308,7 +309,7 @@ export function Footer() {
         </div>
       </div>
       <div className="pb-5 text-center">
-        <p className="text-xs font-normal text-gray-600 md:text-sm">
+        <p className="text-xs font-normal text-muted-foreground md:text-sm">
           {" "}
           স্বত্ব © ২০১৫ - ২০২৪ টেন মিনিট স্কুল কর্তৃক সর্বস্বত্ব সংরক্ষিত{" "}
         </p>

@@ -15,7 +15,7 @@ export function Testimonials() {
         style={{ color: "initial", maxWidth: 578 }}
       >
         <div className="mx-auto">
-          <h2 className="mb-2 text-2xl font-semibold leading-[32px] text-[#111827] md:mb-4 md:text-[44px] md:leading-[56px]">
+          <h2 className="mb-2 text-2xl font-semibold leading-[32px] text-[#111827] dark:text-foreground md:mb-4 md:text-[44px] md:leading-[56px]">
             কেন আমরাই শিক্ষার্থী ও অভিভাবকগণের প্রথম পছন্দ?
           </h2>
         </div>
@@ -31,7 +31,7 @@ export function Testimonials() {
                 className="py-2 sm:basis-1/2 md:basis-1/3 lg:basis-1/4"
                 key={name}
               >
-                <div className="relative mt-5 flex min-h-[250px] flex-col justify-between rounded-lg border bg-[#FFF] p-6 align-top md:min-h-[270px]">
+                <div className="relative mt-5 flex min-h-[250px] flex-col justify-between rounded-lg border bg-[#FFF] p-6 align-top dark:bg-secondary dark:text-secondary-foreground md:min-h-[270px]">
                   <div>
                     <div
                       className="absolute -top-4 left-5 z-[2] flex h-[38px] w-[38px] flex-row items-center justify-center rounded-full bg-[#FCE0D6] p-2"

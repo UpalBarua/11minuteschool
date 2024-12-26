@@ -1,7 +1,10 @@
+import Image from "next/image";
+import Link from "next/link";
+
 export function App() {
   return (
     <section className="py-[72px] md:py-28">
-      <div className="relative flex flex-col items-center overflow-hidden rounded-[20px] bg-black px-5 pt-8 md:flex-row md:pt-0">
+      <div className="relative flex flex-col items-center overflow-hidden rounded-[20px] border bg-black px-5 pt-8 shadow md:flex-row md:pt-0">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width={1084}
@@ -138,54 +141,40 @@ export function App() {
           </defs>
         </svg>
         <div className="section-content relative z-[1] flex flex-col items-center justify-center md:w-1/2 md:items-start md:px-[72px]">
-          <h2 className="pb-5 text-center text-xl font-semibold leading-8 text-white md:pb-12 md:text-left md:text-[34px] md:leading-[44px]">
+          <h2 className="pb-5 text-center text-xl font-semibold leading-8 text-white md:pb-12 md:text-left md:text-[34px] md:leading-relaxed">
             ডাউনলোড করুন আমাদের মোবাইল অ্যাপ, শেখা শুরু করুন আজ থেকেই
           </h2>
           <div className="store-link">
             <div className="flex">
               <div className="mr-4">
-                <a href="https://play.google.com/store/apps/details?id=com.a10minuteschool.tenminuteschool">
+                <Link href="https://play.google.com/store/apps/details?id=com.a10minuteschool.tenminuteschool">
                   <div
                     className="undefined opacity-0 transition-opacity duration-300 ease-in-out"
                     style={{ fontSize: 0, opacity: 1 }}
                   >
-                    <img
+                    <Image
                       alt="svg"
-                      data-original-src="/images/home/googlePlay.svg"
-                      draggable="false"
-                      loading="lazy"
                       width={150}
                       height={48}
-                      decoding="async"
-                      data-nimg={1}
-                      className=""
-                      style={{ color: "transparent" }}
                       src="https://10minuteschool.com/images/home/googlePlay.svg?w=150&h=48"
                     />
                   </div>
-                </a>
+                </Link>
               </div>
               <div>
-                <a href="https://apps.apple.com/us/app/10-minute-school/id1577061772">
+                <Link href="https://apps.apple.com/us/app/10-minute-school/id1577061772">
                   <div
                     className="undefined opacity-0 transition-opacity duration-300 ease-in-out"
                     style={{ fontSize: 0, opacity: 1 }}
                   >
-                    <img
+                    <Image
                       alt="svg"
-                      data-original-src="/images/home/appStore.svg"
-                      draggable="false"
-                      loading="lazy"
                       width={150}
                       height={48}
-                      decoding="async"
-                      data-nimg={1}
-                      className=""
-                      style={{ color: "transparent" }}
                       src="https://10minuteschool.com/images/home/appStore.svg?w=150&h=48"
                     />
                   </div>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -195,17 +184,10 @@ export function App() {
             className="undefined opacity-0 transition-opacity duration-300 ease-in-out"
             style={{ fontSize: 0, opacity: 1 }}
           >
-            <img
+            <Image
               alt="svg"
-              data-original-src="https://cdn.10minuteschool.com/images/download_app_1668328988106.png"
-              draggable="false"
-              loading="lazy"
               width={503}
               height={428}
-              decoding="async"
-              data-nimg={1}
-              className="w-full"
-              style={{ color: "transparent" }}
               src="https://cdn.10minuteschool.com/images/download_app_1668328988106.png?w=503&h=428"
             />
           </div>

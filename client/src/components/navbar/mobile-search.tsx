@@ -31,7 +31,7 @@ export function MobileSearch() {
         onClick={() => setIsSearchOpen(true)}
       >
         <Image
-          className="size-6"
+          className="size-6 dark:invert"
           src="/icons/icon-search.svg"
           alt="search icon"
           height={50}

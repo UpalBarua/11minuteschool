@@ -35,7 +35,7 @@ export function Courses() {
               </TabsTrigger>
             ))}
           </CarouselContent>
-          <CarouselPrevious className="size-8 translate-x-[3.5rem] border-0 bg-background/60 transition-colors hover:bg-background/70" />
+          <CarouselPrevious className="size-8 translate-x-[3.5rem] border-0 bg-foreground/60 transition-colors hover:bg-background/70" />
           <CarouselNext className="size-8 -translate-x-[3.5rem] border-0 bg-foreground/60 transition-colors hover:bg-foreground/70" />
         </Carousel>
       </TabsList>
