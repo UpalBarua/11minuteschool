@@ -18,8 +18,6 @@ import {
 } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
 
-export const fuck = [{ href: "fuck" }];
-
 export const navLinks = [
   {
     label: "ক্লাস ৬-১২",
@@ -344,7 +342,7 @@ export function MobileNavMenu() {
                       {label}
                     </AccordionTrigger>
                     <AccordionContent className="ps-2">
-                      {links.map(({ label, href, icon }) => (
+                      {links.map(({ label, icon }) => (
                         <li
                           className="flex cursor-pointer items-center gap-x-3 rounded px-4 py-3 text-base font-medium text-[#4B5563] hover:bg-gray-100"
                           key={label}
