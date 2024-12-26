@@ -10,6 +10,7 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
+import api from "@/data/api";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Loader2 } from "lucide-react";
 import { signIn } from "next-auth/react";
@@ -53,7 +54,7 @@ export function RegisterForm({ email }: RegisterFormProps) {
   function onSubmit({ password }: TRegisterFormSchema) {
     startTransition(async () => {
       try {
-        await fetch("http://localhost:8080/api/users/register", {
+        await fetch(`${api}/users/register`, {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

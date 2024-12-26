@@ -1,9 +1,9 @@
 "use client";
 
+import { Loader2 } from "lucide-react";
 import { useTransition } from "react";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
-import { Loader2 } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import {
@@ -15,6 +15,7 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
+import api from "@/data/api";
 import { zodResolver } from "@hookform/resolvers/zod";
 
 const emailFormSchema = z.object({
@@ -46,9 +47,9 @@ export function EmailForm({
   function onSubmit({ email }: TEmailFormSchema) {
     startTransition(async () => {
       try {
-        const response = await fetch(
-          `http://localhost:8080/api/users/${email}`,
-        ).then((res) => res.json());
+        const response = await fetch(`${api}/api/users/${email}`).then((res) =>
+          res.json(),
+        );
 
         setVerifiedEmailAction(email);
 
